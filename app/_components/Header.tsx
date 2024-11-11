@@ -41,7 +41,7 @@ export const Header = () => {
         >
           <ul className="flex flex-col items-center gap-4 p-4">
             <Link
-              href="app/_components/Realisations.tsx"
+              href="#Realisations"
               className="w-full text-center p-2 hover:text-tertiary"
               onClick={() => setIsOpen(false)}
             >

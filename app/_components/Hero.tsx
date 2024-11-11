@@ -19,7 +19,7 @@ export const Hero = () => {
         className="absolute w-full h-full flex items-center justify-center text-white text-center text-xl z-30"
         style={{ y: newHoverTop }}
       >
-        <p>
+        <p className="max-w-3xl px-4 m-auto">
           Je m’appelle Axel Bard et je suis paysagiste depuis plus de 6 ans.
           <br />
           Passionné par la nature et l’aménagement des espaces extérieurs, j’ai
