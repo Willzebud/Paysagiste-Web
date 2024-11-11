@@ -12,7 +12,7 @@ export const Hero = () => {
   return (
     <div className="w-full h-screen flex relative overflow-hidden">
       <motion.div
-        className="absolute w-full h-screen bg-black opacity-60 z-20"
+        className="absolute w-full h-screen bg-black opacity-70 z-20"
         style={{ y: newHoverTop }}
       />
       <motion.div

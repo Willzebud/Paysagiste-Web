@@ -18,9 +18,9 @@ const config: Config = {
         "spin-slow": "spin 10s linear infinite",
       },
       colors: {
-        tertiary: "#06d6a0",
+        tertiary: "#036349",
         quaternary: "#22577A",
-        quinary: "#C7F9CC",
+        quinary: "#06d6a0",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {
