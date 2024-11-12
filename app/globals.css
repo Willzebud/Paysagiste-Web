@@ -31,6 +31,11 @@ body {
     --tertiary: #036349;
     --quaternary: #22577a;
     --quinary: #06d6a0;
+    --gray-200: #e5e7eb;
+    --cyan-500: #06b6d4;
+    --emerald-500: #10b981;
+    --orange-500: #f97316;
+    --yellow-500: #f59e0b;
     --accent: 0 0% 85%;
     --accent-foreground: 0 0% 25%;
     --destructive: 2 80% 24%;

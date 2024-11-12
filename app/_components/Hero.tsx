@@ -6,7 +6,7 @@ import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 export const Hero = () => {
   const { scrollYProgress } = useScroll();
 
-  const baseHoverTop = useTransform(scrollYProgress, [0, 0.02], [-1000, 0]);
+  const baseHoverTop = useTransform(scrollYProgress, [0, 0.001], [-1000, 0]);
   const newHoverTop = useSpring(baseHoverTop, { stiffness: 100, damping: 20 });
 
   return (
