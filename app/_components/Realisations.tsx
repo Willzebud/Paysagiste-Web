@@ -31,7 +31,10 @@ export const Realisations = () => {
               Eclaircie8,
               Eclaircie9,
             ].map((imageSrc, index) => (
-              <div key={index} className="relative group w-[320px] h-[500px]">
+              <div
+                key={index}
+                className="relative group w-[320px] h-[500px] ml-4"
+              >
                 <div className="absolute inset-0 -m-2 bg-tertiary opacity-0 group-hover:opacity-80 transition-opacity duration-30 rounded-[30px]"></div>
                 <Image
                   src={imageSrc}
