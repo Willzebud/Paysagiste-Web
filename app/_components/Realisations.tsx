@@ -2,6 +2,7 @@
 import { Section } from "./Section";
 import Image from "next/image";
 import React from "react";
+import { FlipWordsDemo } from "../_components/FlipWords";
 import Eclaircie1 from "../images/imagesRealisations/Eclaircie1.webp";
 import Eclaircie2 from "../images/imagesRealisations/Eclaircie2.webp";
 import Eclaircie3 from "../images/imagesRealisations/Eclaircie3.webp";
@@ -16,9 +17,7 @@ export const Realisations = () => {
   return (
     <div id="Realisations">
       <Section>
-        <h2 className="font-caption font-bold text-5xl text-tertiary">
-          Réalisations
-        </h2>
+        <FlipWordsDemo />
         <div className="overflow-x-auto flex space-x-4 py-4">
           <div className="flex flex-row gap-4">
             {[
