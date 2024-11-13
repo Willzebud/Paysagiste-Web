@@ -3,12 +3,11 @@
 import React from "react";
 import { StickyScroll } from "@/components/ui/StickyScroll";
 import Image from "next/image";
-import EclairciePhoto1 from "../images/imagesServices/EclairciePhoto1.webp";
-import EclairciePhoto2 from "../images/imagesServices/EclairciePhoto2.webp";
-import EclairciePhoto3 from "../images/imagesServices/EclairciePhoto3.webp";
-import EclairciePhoto4 from "../images/imagesServices/EclairciePhoto4.webp";
-import EclairciePhoto5 from "../images/imagesServices/EclairciePhoto5.webp";
-import { Section } from "./Section";
+import EclairciePhoto1 from "../../public/images/imagesServices/EclairciePhoto1.webp";
+import EclairciePhoto2 from "../../public/images/imagesServices/EclairciePhoto2.webp";
+import EclairciePhoto3 from "../../public/images/imagesServices/EclairciePhoto3.webp";
+import EclairciePhoto4 from "../../public/images/imagesServices/EclairciePhoto4.webp";
+import EclairciePhoto5 from "../../public/images/imagesServices/EclairciePhoto5.webp";
 
 const content = [
   {

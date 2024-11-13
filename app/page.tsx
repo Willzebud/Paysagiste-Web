@@ -3,16 +3,20 @@ import { Hero } from "./_components/Hero";
 import { Spacing } from "./_components/Spacing";
 import { Realisations } from "./_components/Realisations";
 import { Services } from "./_components/Services";
+import { Inspiration } from "./_components/Inspiration";
 
 export default function Home() {
   return (
     <main>
       <Header />
+      <Spacing />
       <Hero />
       <Spacing />
       <Realisations />
       <Spacing />
       <Services />
+      <Spacing />
+      <Inspiration />
     </main>
   );
 }

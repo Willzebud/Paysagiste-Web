@@ -3,15 +3,15 @@ import { Section } from "./Section";
 import Image from "next/image";
 import React from "react";
 import { FlipWordsDemo } from "../_components/FlipWords";
-import Eclaircie1 from "../images/imagesRealisations/Eclaircie1.webp";
-import Eclaircie2 from "../images/imagesRealisations/Eclaircie2.webp";
-import Eclaircie3 from "../images/imagesRealisations/Eclaircie3.webp";
-import Eclaircie4 from "../images/imagesRealisations/Eclaircie4.webp";
-import Eclaircie5 from "../images/imagesRealisations/Eclaircie5.webp";
-import Eclaircie6 from "../images/imagesRealisations/Eclaircie6.webp";
-import Eclaircie7 from "../images/imagesRealisations/Eclaircie7.webp";
-import Eclaircie8 from "../images/imagesRealisations/Eclaircie8.webp";
-import Eclaircie9 from "../images/imagesRealisations/Eclaircie9.webp";
+import Eclaircie1 from "../../public/images/imagesRealisations/Eclaircie1.webp";
+import Eclaircie2 from "../../public/images/imagesRealisations/Eclaircie2.webp";
+import Eclaircie3 from "../../public/images/imagesRealisations/Eclaircie3.webp";
+import Eclaircie4 from "../../public/images/imagesRealisations/Eclaircie4.webp";
+import Eclaircie5 from "../../public/images/imagesRealisations/Eclaircie5.webp";
+import Eclaircie6 from "../../public/images/imagesRealisations/Eclaircie6.webp";
+import Eclaircie7 from "../../public/images/imagesRealisations/Eclaircie7.webp";
+import Eclaircie8 from "../../public/images/imagesRealisations/Eclaircie8.webp";
+import Eclaircie9 from "../../public/images/imagesRealisations/Eclaircie9.webp";
 
 export const Realisations = () => {
   return (

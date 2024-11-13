@@ -1,5 +1,5 @@
 "use client";
-import imageAccueil from "../images/imageAccueil.webp";
+import imageAccueil from "../../public/images/imageAccueil.webp";
 import Image from "next/image";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 

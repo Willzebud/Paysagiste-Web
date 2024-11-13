@@ -55,7 +55,7 @@ export const Header = () => {
               Services
             </Link>
             <Link
-              href="Inspirez-vous"
+              href="#Inspirez-vous"
               className="w-full text-center p-2 hover:text-tertiary"
               onClick={() => setIsOpen(false)}
             >
