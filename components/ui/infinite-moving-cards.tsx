@@ -90,6 +90,7 @@ export const InfiniteMovingCards = ({
               src={item.image}
               alt={`Image for item ${item.id}`}
               fill
+              sizes=""
               className="rounded-lg object-cover"
             />
           </div>

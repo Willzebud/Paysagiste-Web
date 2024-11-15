@@ -12,7 +12,7 @@ export function FlipWordsDemo() {
 
   return (
     <div>
-      <div className="font-caption font-bold text-5xl">
+      <div className="font-caption font-bold text-5xl max-w-3xl m-auto px-4 pb-20">
         <FlipWords words={words} className="text-tertiary" /> <br />
         <p className="pl-3 text-3xl">votre espace extérieur avec Éclaircie</p>
       </div>

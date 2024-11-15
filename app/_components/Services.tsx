@@ -41,6 +41,13 @@ const content = [
     ),
   },
   {
+    title: "",
+    description: "",
+    content: (
+      <div className="h-full w-full flex items-center justify-center"></div>
+    ),
+  },
+  {
     title: "Éclairage paysager",
     description:
       "Mise en place de lumières extérieures pour accentuer les éléments du jardin, créer une ambiance en soirée et améliorer la sécurité du site.",
@@ -54,6 +61,13 @@ const content = [
           alt="linear board demo"
         />
       </div>
+    ),
+  },
+  {
+    title: "",
+    description: "",
+    content: (
+      <div className="h-full w-full flex items-center justify-center"></div>
     ),
   },
   {
@@ -73,6 +87,13 @@ const content = [
     ),
   },
   {
+    title: "",
+    description: "",
+    content: (
+      <div className="h-full w-full flex items-center justify-center"></div>
+    ),
+  },
+  {
     title: "Installation de systèmes d'irrigation",
     description:
       "Conception et mise en place de systèmes d’arrosage automatisés pour garantir une hydratation adéquate et efficace des plantes.",
@@ -86,6 +107,13 @@ const content = [
           alt="linear board demo"
         />
       </div>
+    ),
+  },
+  {
+    title: "",
+    description: "",
+    content: (
+      <div className="h-full w-full flex items-center justify-center"></div>
     ),
   },
   {
@@ -108,8 +136,8 @@ const content = [
 
 export function Services() {
   return (
-    <div id="Services" className="p-10 bg-tertiary">
-      <h2 className="font-caption font-bold text-5xl max-w-3xl px-4 m-auto text-white mt-20">
+    <div id="Services" className="bg-tertiary">
+      <h2 className="font-caption font-bold pt-20 text-5xl max-w-3xl px-4 m-auto text-white mt-20">
         Services
       </h2>
       <StickyScroll content={content} />

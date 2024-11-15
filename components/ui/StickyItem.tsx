@@ -35,7 +35,7 @@ const StickyItem = ({
           {description}
         </p>
       </div>
-      <div className="w-[300px] h-[300px] rounded-lg overflow-hidden">
+      <div className="w-[300px] h-[300px] md:w-[400px] md:h-[400px] lg:w-[400px] lg:h-[400px] rounded-lg overflow-hidden">
         {content}
       </div>
     </motion.div>

@@ -31,7 +31,7 @@ export function StickyScroll({ content }: StickyScrollProps) {
 
   return (
     <div
-      className="relative w-full"
+      className="relative w-full p-4"
       style={{ height: `${content.length * 80}vh` }}
     >
       <div className="sticky top-0 h-screen flex items-center justify-center">
