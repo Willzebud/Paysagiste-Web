@@ -23,7 +23,8 @@ export const InfiniteMovingCards = ({
   const scrollerRef = React.useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    function addAnimation() {
+    // Définir la logique directement dans une fonction anonyme
+    (function () {
       if (containerRef.current && scrollerRef.current) {
         const scrollerContent = Array.from(scrollerRef.current.children);
 
@@ -50,9 +51,7 @@ export const InfiniteMovingCards = ({
 
         setStart(true);
       }
-    }
-
-    addAnimation();
+    })();
   }, [direction, speed]);
 
   const [start, setStart] = useState(false);
