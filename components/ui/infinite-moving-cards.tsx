@@ -23,8 +23,37 @@ export const InfiniteMovingCards = ({
   const scrollerRef = React.useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    function addAnimation() {
+      if (containerRef.current && scrollerRef.current) {
+        const scrollerContent = Array.from(scrollerRef.current.children);
+
+        scrollerContent.forEach((item) => {
+          const duplicatedItem = item.cloneNode(true);
+          if (scrollerRef.current) {
+            scrollerRef.current.appendChild(duplicatedItem);
+          }
+        });
+
+        if (containerRef.current) {
+          containerRef.current.style.setProperty(
+            "--animation-direction",
+            direction === "left" ? "forwards" : "reverse"
+          );
+
+          const duration =
+            speed === "fast" ? "20s" : speed === "normal" ? "40s" : "80s";
+          containerRef.current.style.setProperty(
+            "--animation-duration",
+            duration
+          );
+        }
+
+        setStart(true);
+      }
+    }
+
     addAnimation();
-  }, []);
+  }, [direction, speed]);
 
   const [start, setStart] = useState(false);
 

@@ -1,5 +1,4 @@
 "use client";
-import { Section } from "./Section";
 import Image from "next/image";
 import React from "react";
 import { FlipWordsDemo } from "../_components/FlipWords";
