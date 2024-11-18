@@ -56,7 +56,7 @@ export const InfiniteMovingCards = ({
       >
         {items.map((item) => (
           <div
-            className="w-[350px] h-[400px] max-w-full relative rounded-2xl flex-shrink-0 md:w-[450px]"
+            className="w-[350px] max-w-full relative rounded-2xl flex-shrink-0 md:w-[450px] aspect-[16/10]"
             style={{
               background:
                 "linear-gradient(180deg, var(--slate-800), var(--slate-900))",
@@ -67,8 +67,9 @@ export const InfiniteMovingCards = ({
               src={item.image}
               alt={`Image for item ${item.id}`}
               fill
-              sizes=""
-              className="rounded-lg object-cover"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              loading="lazy"
+              className="rounded-xl object-cover"
             />
           </div>
         ))}

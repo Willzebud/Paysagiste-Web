@@ -16,6 +16,7 @@ export default function Home() {
       <Services />
       <Spacing />
       <Inspiration />
+      <Spacing />
     </main>
   );
 }

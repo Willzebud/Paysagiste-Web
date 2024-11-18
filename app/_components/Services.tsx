@@ -1,146 +1,59 @@
 // Services.tsx
 "use client";
 import React from "react";
-import { StickyScroll } from "@/components/ui/StickyScroll";
-import Image from "next/image";
-import EclairciePhoto1 from "../../public/images/imagesServices/EclairciePhoto1.webp";
-import EclairciePhoto2 from "../../public/images/imagesServices/EclairciePhoto2.webp";
-import EclairciePhoto3 from "../../public/images/imagesServices/EclairciePhoto3.webp";
-import EclairciePhoto4 from "../../public/images/imagesServices/EclairciePhoto4.webp";
-import EclairciePhoto5 from "../../public/images/imagesServices/EclairciePhoto5.webp";
+import EclairciePhoto10 from "../../public/images/imagesServices/EclairciePhoto10.webp";
+import EclairciePhoto11 from "../../public/images/imagesServices/EclairciePhoto11.webp";
+import EclairciePhoto12 from "../../public/images/imagesServices/EclairciePhoto12.webp";
+import EclairciePhoto13 from "../../public/images/imagesServices/EclairciePhoto13.webp";
+import EclairciePhoto14 from "../../public/images/imagesServices/EclairciePhoto14.webp";
 
-const content = [
-  {
-    title: "",
-    description: "",
-    content: (
-      <div className="h-full w-full bg-gradient-to-br from-cyan-500 to-emerald-500 flex items-center justify-center text-white text-lg font-semibold"></div>
-    ),
-  },
-  {
-    title: "",
-    description: "",
-    content: (
-      <div className="h-full w-full flex items-center justify-center"></div>
-    ),
-  },
-  {
-    title: "Aménagement paysager",
-    description:
-      "Mise en place de l’infrastructure extérieure (terrasses, allées, murs...) et installation des plantes pour transformer l’espace en un jardin harmonieux.",
-    content: (
-      <div className="h-full w-full flex items-center justify-center text-white text-lg font-semibold">
-        <Image
-          src={EclairciePhoto1}
-          width={300}
-          height={300}
-          className="h-full w-full object-cover"
-          alt="linear board demo"
-        />
-      </div>
-    ),
-  },
-  {
-    title: "",
-    description: "",
-    content: (
-      <div className="h-full w-full flex items-center justify-center"></div>
-    ),
-  },
-  {
-    title: "Éclairage paysager",
-    description:
-      "Mise en place de lumières extérieures pour accentuer les éléments du jardin, créer une ambiance en soirée et améliorer la sécurité du site.",
-    content: (
-      <div className="h-full w-full bg-gradient-to-br from-cyan-500 to-emerald-500 flex items-center justify-center text-white text-lg font-semibold">
-        <Image
-          src={EclairciePhoto2}
-          width={300}
-          height={300}
-          className="h-full w-full object-cover"
-          alt="linear board demo"
-        />
-      </div>
-    ),
-  },
-  {
-    title: "",
-    description: "",
-    content: (
-      <div className="h-full w-full flex items-center justify-center"></div>
-    ),
-  },
-  {
-    title: "Conception de jardin",
-    description:
-      "Élaboration de plans personnalisés pour créer des espaces extérieurs esthétiques et fonctionnels.",
-    content: (
-      <div className="h-full w-full bg-gradient-to-br from-cyan-500 to-emerald-500 flex items-center justify-center text-white text-lg font-semibold">
-        <Image
-          src={EclairciePhoto3}
-          width={300}
-          height={300}
-          className="h-full w-full object-cover"
-          alt="linear board demo"
-        />
-      </div>
-    ),
-  },
-  {
-    title: "",
-    description: "",
-    content: (
-      <div className="h-full w-full flex items-center justify-center"></div>
-    ),
-  },
-  {
-    title: "Installation de systèmes d'irrigation",
-    description:
-      "Conception et mise en place de systèmes d’arrosage automatisés pour garantir une hydratation adéquate et efficace des plantes.",
-    content: (
-      <div className="h-full w-full bg-gradient-to-br from-cyan-500 to-emerald-500 flex items-center justify-center text-white text-lg font-semibold">
-        <Image
-          src={EclairciePhoto4}
-          width={300}
-          height={300}
-          className="h-full w-full object-cover"
-          alt="linear board demo"
-        />
-      </div>
-    ),
-  },
-  {
-    title: "",
-    description: "",
-    content: (
-      <div className="h-full w-full flex items-center justify-center"></div>
-    ),
-  },
-  {
-    title: "Entretien de jardin",
-    description:
-      "Services réguliers de tonte, taille, désherbage et fertilisation pour garder le jardin en parfait état.",
-    content: (
-      <div className="h-full w-full bg-gradient-to-br from-cyan-500 to-emerald-500 flex items-center justify-center text-white text-lg font-semibold">
-        <Image
-          src={EclairciePhoto5}
-          width={300}
-          height={300}
-          className="h-full w-full object-cover"
-          alt="linear board demo"
-        />
-      </div>
-    ),
-  },
-];
+import { AnimatedTestimonials } from "@/components/ui/animated-testimonials";
 
 export function Services() {
+  const testimonials = [
+    {
+      quote:
+        "Mise en place de l’infrastructure extérieure (terrasses, allées, murs...) et installation des plantes pour transformer l’espace en un jardin harmonieux.",
+      name: "Aménagement paysager",
+      designation: "",
+      src: EclairciePhoto10.src,
+    },
+    {
+      quote:
+        "Mise en place de lumières extérieures pour accentuer les éléments du jardin, créer une ambiance en soirée et améliorer la sécurité du site.",
+      name: "Éclairage paysager",
+      designation: "",
+      src: EclairciePhoto11.src,
+    },
+    {
+      quote:
+        "Élaboration de plans personnalisés pour créer des espaces extérieurs esthétiques et fonctionnels.",
+      name: "Conception de jardin",
+      designation: "",
+      src: EclairciePhoto12.src,
+    },
+    {
+      quote:
+        "Conception et mise en place de systèmes d’arrosage automatisés pour garantir une hydratation adéquate et efficace des plantes.",
+      name: "Installation de systèmes d'irrigation",
+      designation: "",
+      src: EclairciePhoto13.src,
+    },
+    {
+      quote:
+        "Services réguliers de tonte, taille, désherbage et fertilisation pour garder le jardin en parfait état.",
+      name: "Entretien de jardin",
+      designation: "",
+      src: EclairciePhoto14.src,
+    },
+  ];
+
   return (
     <div id="Services" className="bg-tertiary">
       <h2 className="font-caption font-bold pt-20 text-5xl max-w-3xl px-4 m-auto text-white mt-20">
         Services
       </h2>
-      <StickyScroll content={content} />
+      <AnimatedTestimonials testimonials={testimonials} />
     </div>
   );
 }
