@@ -12,8 +12,8 @@ export function FlipWordsDemo() {
 
   return (
     <div>
-      <div className="font-caption font-bold text-5xl max-w-3xl m-auto px-4 pb-5">
-        <FlipWords words={words} className="text-tertiary" /> <br />
+      <div className="font-caption font-bold px-4 text-5xl max-w-3xl m-auto pb-5">
+        <FlipWords words={words} className="text-quinary" /> <br />
         <p className="pl-3 text-3xl">votre espace extérieur avec Éclaircie</p>
       </div>
     </div>

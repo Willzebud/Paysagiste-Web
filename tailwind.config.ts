@@ -27,9 +27,9 @@ const config: Config = {
         },
       },
       colors: {
-        tertiary: "#654A06",
-        quaternary: "#22577A",
-        quinary: "#06d6a0",
+        tertiary: "#F1FFF6",
+        quaternary: "#3C7861",
+        quinary: "#3C786E",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {

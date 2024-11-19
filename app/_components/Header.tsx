@@ -28,7 +28,7 @@ export const Header = () => {
               />
             ) : (
               <Sun
-                className="text-primary-foreground animate-spin-slow hover:text-tertiary"
+                className="text-primary-foreground animate-spin-slow hover:text-quinary"
                 size={32}
               />
             )}
@@ -42,35 +42,35 @@ export const Header = () => {
           <ul className="flex flex-col items-center gap-4 p-4">
             <Link
               href="#Realisations"
-              className="w-full text-center p-2 hover:text-tertiary"
+              className="w-full text-center p-2 hover:text-quinary"
               onClick={() => setIsOpen(false)}
             >
               Réalisations
             </Link>
             <Link
               href="#Services"
-              className="w-full text-center p-2 hover:text-tertiary"
+              className="w-full text-center p-2 hover:text-quinary"
               onClick={() => setIsOpen(false)}
             >
               Services
             </Link>
             <Link
-              href="#Inspirez-vous"
-              className="w-full text-center p-2 hover:text-tertiary"
+              href="#Inspiration"
+              className="w-full text-center p-2 hover:text-quinary"
               onClick={() => setIsOpen(false)}
             >
               Inspirez-vous
             </Link>
             <Link
               href="À propos"
-              className="w-full text-center p-2 hover:text-tertiary"
+              className="w-full text-center p-2 hover:text-quinary"
               onClick={() => setIsOpen(false)}
             >
               À propos
             </Link>
             <Link
               href="Contact"
-              className="w-full text-center p-2 hover:text-tertiary"
+              className="w-full text-center p-2 hover:text-quinary"
               onClick={() => setIsOpen(false)}
             >
               Contact

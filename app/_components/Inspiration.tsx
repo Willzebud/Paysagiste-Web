@@ -1,60 +1,47 @@
-// Inspiration.tsx
+// Services.tsx
 "use client";
-
 import React from "react";
-import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
-import Image15 from "../../public/images/imagesInspiration/Eclaircie15.webp";
-import Image16 from "../../public/images/imagesInspiration/Eclaircie16.webp";
-import Image17 from "../../public/images/imagesInspiration/Eclaircie17.webp";
-import Image18 from "../../public/images/imagesInspiration/Eclaircie18.webp";
-import Image19 from "../../public/images/imagesInspiration/Eclaircie19.webp";
-import Image20 from "../../public/images/imagesInspiration/Eclaircie20.webp";
-import Image21 from "../../public/images/imagesInspiration/Eclaircie21.webp";
+import Eclaircie15 from "../../public/images/imagesInspiration/Eclaircie15.webp";
+import Eclaircie16 from "../../public/images/imagesInspiration/Eclaircie16.webp";
+import Eclaircie17 from "../../public/images/imagesInspiration/Eclaircie17.webp";
+import Eclaircie18 from "../../public/images/imagesInspiration/Eclaircie18.webp";
+import Eclaircie19 from "../../public/images/imagesInspiration/Eclaircie19.webp";
+import Eclaircie20 from "../../public/images/imagesInspiration/Eclaircie20.webp";
+import Eclaircie21 from "../../public/images/imagesInspiration/Eclaircie21.webp";
+
+import { AnimatedTestimonials } from "@/components/ui/animated-testimonials";
 
 export function Inspiration() {
+  const testimonials = [
+    {
+      src: Eclaircie15.src,
+    },
+    {
+      src: Eclaircie16.src,
+    },
+    {
+      src: Eclaircie17.src,
+    },
+    {
+      src: Eclaircie18.src,
+    },
+    {
+      src: Eclaircie19.src,
+    },
+    {
+      src: Eclaircie20.src,
+    },
+    {
+      src: Eclaircie21.src,
+    },
+  ];
+
   return (
-    <div id="Inspirez-vous">
-      <h2 className="font-caption font-bold text-5xl max-w-3xl px-4 m-auto text-tertiary">
+    <div id="Inspiration">
+      <h2 className="font-caption font-bold text-5xl max-w-3xl px-4 m-auto text-quinary mt-20">
         Inspirez-vous
       </h2>
-      <div className="h-[20rem] rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden">
-        <InfiniteMovingCards
-          items={testimonials}
-          direction="right"
-          speed="normal"
-        />
-      </div>
+      <AnimatedTestimonials testimonials={testimonials} />
     </div>
   );
 }
-
-const testimonials = [
-  {
-    id: "1",
-    image: Image15,
-  },
-  {
-    id: "2",
-    image: Image16,
-  },
-  {
-    id: "3",
-    image: Image17,
-  },
-  {
-    id: "4",
-    image: Image18,
-  },
-  {
-    id: "5",
-    image: Image19,
-  },
-  {
-    id: "6",
-    image: Image20,
-  },
-  {
-    id: "7",
-    image: Image21,
-  },
-];
