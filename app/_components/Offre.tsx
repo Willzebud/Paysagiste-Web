@@ -26,6 +26,7 @@ export const Offre = () => {
             éligibles pour des services à domicile (ménage, jardinage...). Plus
             besoin d’attendre l’année suivante : ces services deviennent plus
             abordables dès le paiement. <br />
+            <br />
             Comment en bénéficier ?
           </p>
 
