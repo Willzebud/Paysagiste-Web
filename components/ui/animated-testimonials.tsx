@@ -99,15 +99,15 @@ export const AnimatedTestimonials = ({
       <div className="flex justify-center gap-4 mt-4">
         <button
           onClick={handlePrev}
-          className="h-10 w-10 rounded-full bg-gray-100 dark:bg-neutral-800 flex items-center justify-center group/button"
+          className="h-10 w-10 rounded-full bg-black dark:bg-neutral-800 flex items-center justify-center group/button"
         >
-          <IconArrowLeft className="h-6 w-6 text-black dark:text-neutral-400 group-hover/button:rotate-12 transition-transform duration-300" />
+          <IconArrowLeft className="h-6 w-6 text-white dark:text-neutral-400 group-hover/button:rotate-12 transition-transform duration-300" />
         </button>
         <button
           onClick={handleNext}
-          className="h-10 w-10 rounded-full bg-gray-100 dark:bg-neutral-800 flex items-center justify-center group/button"
+          className="h-10 w-10 rounded-full bg-black dark:bg-neutral-800 flex items-center justify-center group/button"
         >
-          <IconArrowRight className="h-6 w-6 text-black dark:text-neutral-400 group-hover/button:-rotate-12 transition-transform duration-300" />
+          <IconArrowRight className="h-6 w-6 text-white dark:text-neutral-400 group-hover/button:-rotate-12 transition-transform duration-300" />
         </button>
       </div>
     </div>
