@@ -8,19 +8,19 @@ export const Offre = () => {
   const [showMore, setShowMore] = useState(false);
 
   return (
-    <div id="Offre" className="bg-tertiary pb-20">
+    <div id="Offre" className="bg-quaternary pb-20">
       <h2 className="font-caption font-bold pt-20 text-5xl max-w-3xl px-4 m-auto text-black pt-20 mb-10">
         Offre immédiate
       </h2>
       <div className="flex flex-col items-center justify-center">
-        <div className="bg-quinary w-auto md:w-[1000px] lg:w-[1000px] mx-2 md:mx-10 lg:mx-10 h-auto lg:h-auto shadow-xl flex flex-col items-center justify-center">
+        <div className="bg-white w-auto md:w-[1000px] lg:w-[1000px] mx-2 md:mx-10 lg:mx-10 h-auto lg:h-auto shadow-xl flex flex-col items-center justify-center">
           <div className="w-28 h-28 mb-6 mt-10">
             <IconeOffre className="w-full h-full" />
           </div>
-          <p className="text-white font-bold text-center text-2xl mt-1">
+          <p className="text-black font-bold text-center text-2xl mt-1">
             Bénéficiez de 50% de crédit d’impôt immédiat
           </p>
-          <p className="text-white text-justify mt-3 mb-5 mx-5 md:px-[20px] lg:px-[20px]">
+          <p className="text-black text-justify mt-3 mb-5 mx-5 md:px-[20px] lg:px-[20px]">
             L’avance immédiate du crédit d’impôt permet aux particuliers de
             bénéficier instantanément de 50 % de réduction sur leurs dépenses
             éligibles pour des services à domicile (ménage, jardinage...). Plus
@@ -31,7 +31,7 @@ export const Offre = () => {
 
           {/* Paragraphe masqué */}
           {showMore && (
-            <p className="text-white text-justify mb-10 mx-5 md:px-[20px] lg:px-[20px]">
+            <p className="text-black text-justify mb-10 mx-5 md:px-[20px] lg:px-[20px]">
               Il vous suffit de vous inscrire à l’Urssaf via la plateforme
               “Avance immédiate” ou de vérifier si votre prestataire de services
               est partenaire de ce dispositif. Une fois inscrit, l’avance de 50
@@ -43,9 +43,9 @@ export const Offre = () => {
 
           <button
             onClick={() => setShowMore((prev) => !prev)} // Change l'état à chaque clic
-            className="shadow-lg bg-white w-[150px] md:w-[150px] lg:w-[150px] h-[40px] rounded-lg mb-5"
+            className="shadow-lg bg-tertiary w-[150px] md:w-[150px] lg:w-[150px] h-[40px] rounded-lg mb-5"
           >
-            <p className="font-bold text-quinary">
+            <p className="font-bold text-black">
               {showMore ? "Voir moins" : "En Savoir plus"}
             </p>
           </button>

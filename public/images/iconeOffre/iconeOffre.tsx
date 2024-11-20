@@ -8,7 +8,7 @@ export const IconeOffre = (
       <g id="Page-1" fill="none" fillRule="evenodd">
         <g
           id="059---Money-Bag"
-          fill="#C8FFDC"
+          fill="black"
           fillRule="nonzero"
           transform="translate(0 -1)"
         >
