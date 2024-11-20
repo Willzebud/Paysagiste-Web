@@ -10,10 +10,10 @@ export const Contact = () => {
       <div className="flex flex-col items-center justify-center md:flex-row md:space-x-28 space-y-4 md:space-y-0 max-w-5xl m-auto w-full">
         <div className="md:w-[400px] text-center md:text-left">
           <p className="text-justify p-4">
-            Si vous souhaitez échanger autour de vos projets d'aménagement
+            Si vous souhaitez échanger autour de vos projets d&apos;aménagement
             paysager ou simplement discuter de vos idées, vous pouvez me
-            contacter sur les réseaux sociaux ou m'envoyer un message ici. Je
-            serai ravi de vous répondre !
+            contacter sur les réseaux sociaux ou m&apos;envoyer un message ici.
+            Je serai ravi de vous répondre !
           </p>
         </div>
         <div className="md:w-[400px]">
