@@ -5,6 +5,7 @@ import { Realisations } from "./_components/Realisations";
 import { Inspiration } from "./_components/Inspiration";
 import { Services } from "./_components/Services";
 import { SpacingGreen } from "./_components/SpacingGreen";
+import { Offre } from "./_components/Offre";
 
 export default function Home() {
   return (
@@ -13,9 +14,8 @@ export default function Home() {
       <Hero />
       <Spacing />
       <Realisations />
-      <Spacing />
+      <Offre />
       <Services />
-      <SpacingGreen />
       <Inspiration />
       <Spacing />
     </main>

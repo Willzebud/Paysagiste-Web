@@ -6,41 +6,41 @@ import { Icone4 } from "../../public/images/iconeServices/iconeService4";
 export const Services = () => {
   const services = [
     {
-      title: "Aménagement paysager",
+      title: "Création de jardin",
       description:
-        "Mise en place de l’infrastructure extérieure (terrasses, allées, murs...) et installation des plantes pour transformer l’espace en un jardin harmonieux.",
+        "Nous concevons des jardins sur mesure, en sélectionnant des plantes adaptées et des matériaux durables. Moderne, zen ou luxuriant, votre jardin est réalisé avec soin, du design à la mise en œuvre.",
       icon: Icone1,
     },
     {
-      title: "Éclairage paysager",
+      title: "Un accompagnement sur mesure",
       description:
-        "Mise en place de lumières extérieures pour accentuer les éléments du jardin, créer une ambiance en soirée et améliorer la sécurité du site.",
+        "Nous travaillons main dans la main avec vous pour donner vie à vos projets d’aménagement extérieur. À chaque étape, du design à la réalisation, nous vous conseillons et vous accompagnons.",
       icon: Icone2,
     },
     {
-      title: "Conception de jardin",
+      title: "Arrosage automatique",
       description:
-        "Élaboration de plans personnalisés pour créer des espaces extérieurs esthétiques et fonctionnels.",
+        "Nos systèmes d’arrosage automatique sont discrets et intelligents. Avec des programmateurs, ajustez les cycles d’arrosage selon les saisons et les besoins de vos plantes. Nos solutions sont personnalisées, fiables et économiques.",
       icon: Icone3,
     },
     {
-      title: "Entretien de jardin",
+      title: "Entretien des espaces verts",
       description:
-        "Services réguliers de tonte, taille, désherbage et fertilisation pour garder le jardin en parfait état.",
+        "Un jardin bien entretenu, c’est le secret pour profiter d’un espace vert accueillant toute l’année ! Tailler, arroser et nourrir les plantes, c’est garantir la bonne santé de votre jardin.",
       icon: Icone4,
     },
   ];
 
   return (
-    <div id="Services" className="bg-tertiary pb-20">
-      <h2 className="font-caption font-bold pt-20 text-5xl max-w-3xl px-4 m-auto text-black mt-20 mb-10">
+    <div id="Services" className="bg-white pb-20">
+      <h2 className="font-caption font-bold pt-15 text-5xl max-w-3xl px-4 m-auto text-black mt-20 mb-10">
         Services
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4">
         {services.map((service, index) => (
           <div
             key={index}
-            className="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg"
+            className="flex flex-col items-center justify-items-center bg-quaternary p-6 rounded-lg shadow-lg"
           >
             <div className="w-24 h-24 mb-6">
               <service.icon className="w-full h-full text-primary" />

@@ -28,7 +28,7 @@ const config: Config = {
       },
       colors: {
         tertiary: "#F1FFF6",
-        quaternary: "#3C7861",
+        quaternary: "#C8FFDC",
         quinary: "#3C786E",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",

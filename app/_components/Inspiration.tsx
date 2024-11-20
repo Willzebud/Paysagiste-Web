@@ -37,8 +37,8 @@ export function Inspiration() {
   ];
 
   return (
-    <div id="Inspiration">
-      <h2 className="font-caption font-bold text-5xl max-w-3xl px-4 m-auto text-quinary mt-20">
+    <div id="Inspiration" className="bg-tertiary">
+      <h2 className="font-caption font-bold text-5xl max-w-3xl pt-20 px-4 m-auto text-black mt-20">
         Inspirez-vous
       </h2>
       <AnimatedTestimonials testimonials={testimonials} />
