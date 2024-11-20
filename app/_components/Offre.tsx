@@ -20,7 +20,7 @@ export const Offre = () => {
           <p className="text-white font-bold text-center text-2xl mt-1">
             Bénéficiez de 50% de crédit d’impôt immédiat
           </p>
-          <p className="font-bold text-white text-justify mt-3 mb-5 mx-5 md:px-[20px] lg:px-[20px]">
+          <p className="text-white text-justify mt-3 mb-5 mx-5 md:px-[20px] lg:px-[20px]">
             L’avance immédiate du crédit d’impôt permet aux particuliers de
             bénéficier instantanément de 50 % de réduction sur leurs dépenses
             éligibles pour des services à domicile (ménage, jardinage...). Plus
@@ -31,7 +31,7 @@ export const Offre = () => {
 
           {/* Paragraphe masqué */}
           {showMore && (
-            <p className="font-bold text-white text-justify mb-10 mx-5 md:px-[20px] lg:px-[20px]">
+            <p className="text-white text-justify mb-10 mx-5 md:px-[20px] lg:px-[20px]">
               Il vous suffit de vous inscrire à l’Urssaf via la plateforme
               “Avance immédiate” ou de vérifier si votre prestataire de services
               est partenaire de ce dispositif. Une fois inscrit, l’avance de 50

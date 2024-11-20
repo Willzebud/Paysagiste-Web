@@ -72,11 +72,18 @@ export const Header = () => {
               Inspirez-vous
             </Link>
             <Link
-              href="À propos"
+              href="#Team"
               className="w-full text-center p-2 hover:text-quinary"
               onClick={() => setIsOpen(false)}
             >
-              À propos
+              Team
+            </Link>
+            <Link
+              href="#Contact"
+              className="w-full text-center p-2 hover:text-quinary"
+              onClick={() => setIsOpen(false)}
+            >
+              Contact
             </Link>
           </ul>
         </motion.div>

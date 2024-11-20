@@ -46,7 +46,7 @@ export const Services = () => {
               <service.icon className="w-full h-full text-primary" />
             </div>
             <h3 className="font-bold text-center">{service.title}</h3>
-            <p className="text-center text-gray-600 text-sm">
+            <p className="text-center text-black text-sm text-1xl">
               {service.description}
             </p>
           </div>
