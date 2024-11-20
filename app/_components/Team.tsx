@@ -5,7 +5,7 @@ import EclaircieTeam from "../../public/images/imageTeam/EclaircieTeam.webp";
 export const Team = () => {
   return (
     <div id="Team" className="bg-white pb-20">
-      <h2 className="font-caption font-bold pt-10 text-5xl max-w-3xl px-4 m-auto text-black mt-20 mb-10">
+      <h2 className="font-caption font-bold pt-10 text-5xl max-w-3xl px-4 m-auto text-black pt-20 mb-10">
         Team
       </h2>
       <Section>

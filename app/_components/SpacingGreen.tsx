@@ -6,7 +6,7 @@ export type SapacingProps = {
 };
 
 export const SpacingGreen = ({
-  size = "md",
+  size = "lg",
   color = "#f1fff6",
 }: SapacingProps) => {
   return (

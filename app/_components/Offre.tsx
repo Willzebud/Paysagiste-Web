@@ -9,7 +9,7 @@ export const Offre = () => {
 
   return (
     <div id="Offre" className="bg-tertiary pb-20">
-      <h2 className="font-caption font-bold pt-20 text-5xl max-w-3xl px-4 m-auto text-black mt-20 mb-10">
+      <h2 className="font-caption font-bold pt-20 text-5xl max-w-3xl px-4 m-auto text-black pt-20 mb-10">
         Offre immédiate
       </h2>
       <div className="flex flex-col items-center justify-center">

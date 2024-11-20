@@ -78,13 +78,6 @@ export const Header = () => {
             >
               Team
             </Link>
-            <Link
-              href="#Contact"
-              className="w-full text-center p-2 hover:text-quinary"
-              onClick={() => setIsOpen(false)}
-            >
-              Contact
-            </Link>
           </ul>
         </motion.div>
       </Section>

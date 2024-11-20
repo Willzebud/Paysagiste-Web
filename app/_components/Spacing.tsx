@@ -4,7 +4,7 @@ export type SapacingProps = {
   size?: "sm" | "md" | "lg";
 };
 
-export const Spacing = ({ size = "md" }: SapacingProps) => {
+export const Spacing = ({ size = "lg" }: SapacingProps) => {
   return (
     <div
       className={cn({
