@@ -36,9 +36,12 @@ export const Realisations = () => {
               <Image
                 src={imageSrc}
                 alt={`Image ${index + 1}`}
-                width="0"
-                height="0"
+                fill
+                sizes="(max-width: 768px) 100vw, 
+                      (max-width: 1200px) 50vw, 
+                      33vw"
                 className="relative z-10 rounded-3xl object-cover w-full h-full"
+                loading="lazy"
               />
             </div>
           ))}

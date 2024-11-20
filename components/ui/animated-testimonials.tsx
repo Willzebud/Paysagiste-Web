@@ -81,11 +81,13 @@ export const AnimatedTestimonials = ({
                   <Image
                     src={testimonial.src}
                     alt={`Testimonial ${index + 1}`}
-                    width={500}
-                    height={500}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 
+       (max-width: 1200px) 50vw, 
+       33vw"
                     draggable={false}
-                    className="h-full w-full rounded-3xl object-cover object-center"
-                    priority={true}
+                    className="relative h-full w-full rounded-3xl object-cover object-center"
+                    priority={isActive(index)}
                   />
                 </motion.div>
               ))}
