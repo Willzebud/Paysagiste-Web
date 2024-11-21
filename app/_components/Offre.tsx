@@ -13,7 +13,7 @@ export const Offre = () => {
         Offre immédiate
       </h2>
       <div className="flex flex-col items-center justify-center">
-        <div className="bg-white w-auto md:w-[1000px] lg:w-[1000px] mx-2 md:mx-10 lg:mx-10 h-auto lg:h-auto shadow-xl flex flex-col items-center justify-center">
+        <div className="bg-white w-auto md:w-[800px] lg:w-[1000px] mx-2 md:mx-10 lg:mx-10 h-auto lg:h-auto shadow-xl flex flex-col items-center justify-center">
           <div className="w-28 h-28 mb-6 mt-10">
             <IconeOffre className="w-full h-full" />
           </div>

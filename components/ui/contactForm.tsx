@@ -105,9 +105,7 @@ export default function ContactForm() {
 
       {/* Affichage du statut du formulaire (succès ou échec) */}
       {formStatus && (
-        <p className="form-status mt-4 text-center text-green-500">
-          {formStatus}
-        </p>
+        <p className="form-status mt-4 text-center text-black">{formStatus}</p>
       )}
     </div>
   );

@@ -31,7 +31,7 @@ export const Realisations = () => {
           ].map((imageSrc, index) => (
             <div
               key={index}
-              className="relative group w-[320px] h-[500px] ml-4"
+              className="relative group w-[380px] h-[500px] md:w-[500px] lg:w-[500px] ml-4"
             >
               <Image
                 src={imageSrc}

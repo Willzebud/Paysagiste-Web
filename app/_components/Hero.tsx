@@ -13,11 +13,11 @@ export const Hero = () => {
   return (
     <div className="w-full h-screen flex relative overflow-hidden">
       <motion.div
-        className="absolute w-full h-screen bg-black opacity-70 z-20"
+        className="absolute w-full h-screen bg-quaternary opacity-80 z-20"
         style={{ y: newHoverTop }}
       />
       <motion.div
-        className="absolute w-full h-full flex items-center justify-center text-white text-center text-xl z-30"
+        className="absolute w-full h-full flex items-center justify-center text-black text-center text-xl z-30"
         style={{ y: newHoverTop }}
       >
         <div className="flex flex-col">
@@ -32,7 +32,7 @@ export const Hero = () => {
             immédiate.
           </p>
           <Link href="#Offre">
-            <p className="font-bold text-white mt-5 underline">
+            <p className="font-bold text-black mt-5 underline">
               En savoir plus
             </p>
           </Link>

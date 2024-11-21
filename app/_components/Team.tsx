@@ -11,7 +11,7 @@ export const Team = () => {
       <Section>
         <div className="flex flex-col md:flex-row md:space-x-10 space-y-4 md:space-y-0">
           {/* Texte */}
-          <div className="bg-quaternary p-8 rounded-lg shadow-lg w-full md:w-[400px]">
+          <div className="bg-quaternary p-8 rounded-lg shadow-xl w-full md:w-[400px]">
             <p className="text-black text-center text-1xl mt-1 text-justify">
               Je m’appelle Axel Bard, paysagiste depuis plus de 6 ans. Passionné
               par la nature, je transforme chaque espace en un lieu harmonieux
