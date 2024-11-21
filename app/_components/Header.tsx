@@ -20,7 +20,7 @@ export const Header = () => {
         {/* Section Contact et Icône */}
         <div className="flex items-center space-x-4">
           <Link href="#Contact">
-            <p className="text-black underline pt-3 mr-2">Contactez-Nous</p>
+            <p className="text-black pt-3 mr-2">Contactez-Nous</p>
           </Link>
           <button
             onClick={toggleMenu}
