@@ -2,8 +2,9 @@
 import { Section } from "./Section";
 import { useState } from "react";
 import Link from "next/link";
-import { Sun, SunMoon } from "lucide-react";
 import { motion } from "framer-motion";
+import { IconeWatering1 } from "@/public/images/iconeHeader/iconeWatering1";
+import { IconeWatering2 } from "@/public/images/iconeHeader/iconeWatering2";
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,29 +16,26 @@ export const Header = () => {
     <header className="sticky top-0 py-4 bg-background z-[1000]">
       <Section className="flex items-center justify-between">
         {/* Titre */}
-        <h1 className="text-2xl text-primary-foreground">Wesh</h1>
+        <h1 className="text-2xl text-primary-foreground">Logo</h1>
 
         {/* Section Contact et Icône */}
         <div className="flex items-center space-x-4">
           <Link href="#Contact">
-            <p className="text-black pt-3 mr-2">Contactez-Nous</p>
+            <p className="text-black">Contactez-Nous</p>
           </Link>
           <button
             onClick={toggleMenu}
             className="focus:outline-none"
             aria-label="Toggle menu"
           >
-            <div className="w-6 h-6">
+            <div className="flex items-center justify-center h-11 w-11">
               {isOpen ? (
-                <SunMoon
-                  className="text-primary-foreground hover:text-quinary"
-                  size={32}
+                <IconeWatering2
+                  className="text-primary-foreground origin-right"
+                  size={44}
                 />
               ) : (
-                <Sun
-                  className="text-primary-foreground animate-spin-slow hover:text-quinary"
-                  size={32}
-                />
+                <IconeWatering1 className="text-primary-foreground" size={36} />
               )}
             </div>
           </button>
