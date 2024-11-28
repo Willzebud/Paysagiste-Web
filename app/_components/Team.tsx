@@ -13,21 +13,20 @@ export const Team = () => {
           {/* Texte */}
           <div className="bg-quaternary p-8 rounded-lg shadow-xl w-full md:w-[400px]">
             <p className="text-black text-center text-1xl mt-1 text-justify">
-              Je m’appelle Axel Bard, paysagiste depuis plus de 6 ans. Passionné
-              par la nature, je transforme chaque espace en un lieu harmonieux
-              et esthétique où le végétal est à l’honneur. <br />
-              <br />
-              De la conception à la réalisation, je crée des jardins uniques,
-              adaptés à vos envies et à votre environnement, qu’il s’agisse de
-              petits jardins urbains ou de grands espaces verts. <br />
-              <br />
-              Si vous cherchez un paysagiste attentif et créatif pour donner vie
-              à vos idées, contactez-moi.
+              Chez Éclaircie notre équipe de paysagistes met tout son dynamisme
+              et sa créativité au service de vos projets. <br />
+              <br /> Animés par une véritable passion pour la nature et le
+              design extérieur nous nous engageons à vous offrir des
+              réalisations sur mesure, alliant esthétique, fonctionnalité et
+              respect de l’environnement. <br />
+              <br /> Faites confiance à une équipe motivée qui place votre
+              satisfaction au cœur de ses priorités. Créons ensemble le jardin
+              de vos rêves.
             </p>
           </div>
 
           {/* Image */}
-          <div className="bg-black p-2 rounded-lg w-full md:w-[400px]">
+          <div className="bg-black p-1 rounded-lg w-full md:w-[400px]">
             <Image
               src={EclaircieTeam}
               alt="Photo de l'équipe d'Eclaircie"
