@@ -5,6 +5,8 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { IconeWatering1 } from "@/public/images/iconeHeader/iconeWatering1";
 import { IconeWatering2 } from "@/public/images/iconeHeader/iconeWatering2";
+import logo from "../../public/images/logo.webp";
+import Image from "next/image";
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,9 +17,9 @@ export const Header = () => {
   return (
     <header className="sticky top-0 py-4 bg-background z-[1000] overflow-x-hidden">
       <Section className="flex items-center justify-between">
-        {/* Titre */}
-        <h1 className="text-2xl text-primary-foreground">Logo</h1>
-
+        <div className="w-10 h-10">
+          <Image src={logo} alt="Logo de l'entreprise Éclaircie" />
+        </div>
         {/* Section Contact et Icône */}
         <div className="flex items-center space-x-4">
           <Link href="#Contact">
