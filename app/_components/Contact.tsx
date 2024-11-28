@@ -12,9 +12,15 @@ export const Contact = () => {
           <p className="text-justify p-4">
             Si vous souhaitez échanger autour de vos projets d&apos;aménagement
             paysager ou simplement discuter de vos idées, vous pouvez me
-            contacter en m&apos;envoyant un message ici. Je serai ravi de vous
-            répondre !
+            contacter en m&apos;envoyant un message ou nous appeler directement.
+            Je serai ravi de vous répondre !
           </p>
+          <a
+            href="tel:+33634902284"
+            className="block mt-4 md:ml-4 text-lg font-semibold text-black underline"
+          >
+            +33634902284
+          </a>
         </div>
         <div className="w-full md:w-[400px] p-4">
           <ContactForm />

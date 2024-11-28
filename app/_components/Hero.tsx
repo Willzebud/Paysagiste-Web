@@ -12,7 +12,7 @@ export const Hero = () => {
   const newHoverTop = useSpring(baseHoverTop, { stiffness: 100, damping: 20 });
 
   return (
-    <div className="w-full h-screen flex relative overflow-x-hidden">
+    <div id="Accueil" className="w-full h-screen flex relative overflow-x-hidden">
       <motion.div
         className="absolute w-full h-screen bg-quaternary opacity-80 z-20"
         style={{ y: newHoverTop }}
