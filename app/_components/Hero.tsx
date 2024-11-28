@@ -22,7 +22,7 @@ export const Hero = () => {
         style={{ y: newHoverTop }}
       >
         <div className="flex flex-col">
-          <div className="w-44 h-44 m-auto">
+          <div className="w-36 h-36 m-auto">
             <Image src={logo} alt="Logo de l'entreprise Éclaircie" />
           </div>
           <h1 className="max-w-3xl px-4 m-auto font-bold pb-2 pt-8">

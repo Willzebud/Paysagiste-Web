@@ -15,9 +15,9 @@ export const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 py-4 bg-background z-[1000] overflow-x-hidden">
+    <header className="sticky top-0 py-4 bg-background z-[1000]">
       <Section className="flex items-center justify-between">
-        <div className="w-14 h-14">
+        <div className="w-10 h-10">
           <Image src={logo} alt="Logo de l'entreprise Éclaircie" />
         </div>
         {/* Section Contact et Icône */}
