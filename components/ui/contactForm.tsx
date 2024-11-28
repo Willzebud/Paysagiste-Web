@@ -13,7 +13,7 @@ export default function ContactForm() {
     setIsButtonDisabled(true); // Désactive le bouton pendant la requête
 
     const formData = new FormData(event.currentTarget); // Récupère les données du formulaire
-    formData.append("access_key", "94819b83-cd20-452f-bbc5-7fe2f2062ffe"); // Ajoute la clé d'accès à l'API
+    formData.append("access_key", "3ac6612a-0030-4191-950d-250d0a798bef"); // Ajoute la clé d'accès à l'API
 
     const object = Object.fromEntries(formData); // Convertit les données en objet
     const json = JSON.stringify(object); // Convertit l'objet en JSON
