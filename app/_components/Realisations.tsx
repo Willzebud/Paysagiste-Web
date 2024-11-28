@@ -14,7 +14,7 @@ import Eclaircie9 from "../../public/images/imagesRealisations/Eclaircie9.webp";
 
 export const Realisations = () => {
   return (
-    <div id="Realisations">
+    <div id="Realisations" className="overflow-x-hidden">
       <FlipWordsDemo />
       <div className="overflow-x-auto flex space-x-4 py-4 max-w-6xl m-auto">
         <div className="flex flex-row gap-4">

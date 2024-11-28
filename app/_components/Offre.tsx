@@ -8,7 +8,7 @@ export const Offre = () => {
   const [showMore, setShowMore] = useState(false);
 
   return (
-    <div id="Offre" className="bg-quaternary pb-20">
+    <div id="Offre" className="bg-quaternary pb-20 overflow-x-hidden">
       <h2 className="font-caption font-bold pt-20 text-5xl max-w-3xl px-4 m-auto text-black pt-20 mb-10">
         Offre immédiate
       </h2>

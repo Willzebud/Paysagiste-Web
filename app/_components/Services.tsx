@@ -32,7 +32,7 @@ export const Services = () => {
   ];
 
   return (
-    <div id="Services" className="bg-white pb-20">
+    <div id="Services" className="bg-white pb-20 overflow-x-hidden">
       <h2 className="font-caption font-bold pt-15 text-5xl max-w-3xl px-4 m-auto text-black pt-20 mb-10">
         Services
       </h2>

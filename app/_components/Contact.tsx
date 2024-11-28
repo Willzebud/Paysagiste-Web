@@ -3,7 +3,7 @@ import ContactForm from "@/components/ui/contactForm";
 
 export const Contact = () => {
   return (
-    <div id="Contact" className="bg-quaternary pb-20">
+    <div id="Contact" className="bg-quaternary pb-20 overflow-x-hidden">
       <h2 className="font-caption font-bold pt-10 text-5xl max-w-3xl px-4 m-auto text-black mt-20 pt-20">
         Contact
       </h2>

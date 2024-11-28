@@ -13,7 +13,7 @@ export const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 py-4 bg-background z-[1000]">
+    <header className="sticky top-0 py-4 bg-background z-[1000] overflow-x-hidden">
       <Section className="flex items-center justify-between">
         {/* Titre */}
         <h1 className="text-2xl text-primary-foreground">Logo</h1>
