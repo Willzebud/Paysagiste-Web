@@ -62,7 +62,7 @@ export const Hero = () => {
         className="object-cover object-center w-full h-full" // Classe pour garantir la couverture
         priority
         quality={90}
-        sizes="100vw"
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
       />
     </div>
   );
