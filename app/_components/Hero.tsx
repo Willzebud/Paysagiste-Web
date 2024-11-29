@@ -12,7 +12,10 @@ export const Hero = () => {
   const newHoverTop = useSpring(baseHoverTop, { stiffness: 100, damping: 20 });
 
   return (
-    <div id="Accueil" className="w-full h-screen flex relative overflow-x-hidden">
+    <div
+      id="Accueil"
+      className="w-full h-screen flex relative overflow-x-hidden"
+    >
       <motion.div
         className="absolute w-full h-screen bg-quaternary opacity-80 z-20"
         style={{ y: newHoverTop }}
@@ -36,7 +39,7 @@ export const Hero = () => {
           </p>
           <p className="max-w-3xl px-4 m-auto font-bold">
             Bénéficiez de 50 % de réduction sur vos factures grâce à l’avance
-            immédiate.
+            immédiate
           </p>
           <Link href="#Offre">
             <p className="font-bold text-black mt-5 underline">
