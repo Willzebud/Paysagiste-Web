@@ -7,6 +7,7 @@ import { useEffect, useState, useCallback } from "react";
 
 type Testimonial = {
   src: string;
+  alt: string;
 };
 
 export const AnimatedTestimonials = ({
@@ -79,13 +80,13 @@ export const AnimatedTestimonials = ({
                 >
                   <Image
                     src={testimonial.src}
-                    alt={`Testimonial ${index + 1}`}
+                    alt={testimonial.alt} // Utilisation des alt depuis JSON
                     fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     draggable={false}
                     className="relative h-full w-full rounded-3xl object-cover object-center"
-                    priority={index === 0} // Seule l'image visible immédiatement est prioritaire
-                    loading={index === 0 ? "eager" : "lazy"} // Lazy pour les images hors écran
+                    priority={index === 0} // L'attribut priority est uniquement pour la première image
+                    loading={index === 0 ? "eager" : "lazy"} // Seule la première image est eager
                   />
                 </motion.div>
               ))}

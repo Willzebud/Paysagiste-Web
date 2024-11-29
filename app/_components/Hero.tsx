@@ -28,7 +28,7 @@ export const Hero = () => {
           <div className="w-36 h-36 m-auto">
             <Image
               src={logo}
-              alt="Logo de l'entreprise Éclaircie"
+              alt="Logo de l'entreprise de paysagisme Éclaircie"
               loading="lazy"
             />
           </div>

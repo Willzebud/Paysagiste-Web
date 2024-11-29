@@ -29,7 +29,7 @@ export const Team = () => {
           <div className="bg-black p-1 rounded-lg w-full md:w-[400px]">
             <Image
               src={EclaircieTeam}
-              alt="Photo de l'équipe d'Eclaircie"
+              alt="Photo de l'équipe de l'entreprise Eclaircie avec deux hommes"
               className="w-full h-full object-cover object-center rounded-lg"
               loading="lazy" // Lazy loading
               width={400} // Largeur explicite
