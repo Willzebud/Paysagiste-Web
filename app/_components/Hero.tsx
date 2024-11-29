@@ -55,15 +55,14 @@ export const Hero = () => {
           </Link>
         </div>
       </motion.div>
-      <Image
-        src={imageAccueil}
-        alt="image d'accueil de l'entreprise Éclaircie où l'on voit l'un des massifs rouge de Cassis depuis un jardin"
-        width={1920} // Largeur maximale
-        height={1080} // Hauteur maximale
-        className="object-cover object-center"
-        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
-        priority
-      />
+      <div>
+        <Image
+          src={imageAccueil}
+          alt="image d'accueil de l'entreprise Éclaircie où l'on voit l'un des massifs rouge de Cassis depuis un jardin"
+          className="w-full h-full object-cover object-center"
+          priority
+        />
+      </div>
     </div>
   );
 };
