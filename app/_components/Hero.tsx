@@ -14,7 +14,7 @@ export const Hero = () => {
   return (
     <div
       id="Accueil"
-      className="w-full h-screen flex relative overflow-x-hidden"
+      className="w-full h-screen flex relative overflow-hidden" // `overflow-hidden` pour éviter tout débordement
     >
       <motion.div
         className="absolute w-full h-screen bg-quaternary opacity-80 z-20"
@@ -28,7 +28,7 @@ export const Hero = () => {
           <div className="m-auto">
             <Image
               src={logo}
-              alt="Logo  hero de l'entreprise de paysagisme Éclaircie"
+              alt="Logo hero de l'entreprise de paysagisme Éclaircie"
               width={144}
               height={144}
               priority
@@ -55,14 +55,14 @@ export const Hero = () => {
           </Link>
         </div>
       </motion.div>
-      <div>
-        <Image
-          src={imageAccueil}
-          alt="image d'accueil de l'entreprise Éclaircie où l'on voit l'un des massifs rouge de Cassis depuis un jardin"
-          className="w-full h-full object-cover object-center"
-          priority
-        />
-      </div>
+      <Image
+        src={imageAccueil}
+        alt="image d'accueil de l'entreprise Éclaircie où l'on voit l'un des massifs rouge de Cassis depuis un jardin"
+        fill // Utilisation de layout fill pour couvrir toute la zone parent
+        className="object-cover object-center w-full h-full" // Classe pour garantir la couverture
+        priority
+        sizes="100vw"
+      />
     </div>
   );
 };
