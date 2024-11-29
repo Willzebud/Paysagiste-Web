@@ -17,10 +17,13 @@ export const Header = () => {
   return (
     <header className="sticky top-0 py-4 bg-background z-[1000]">
       <Section className="flex items-center justify-between">
-        <Link href="#Accueil" className="w-10 h-10">
+        <Link href="#Accueil">
           <Image
             src={logo}
             alt="Logo de l'entreprise de paysagisme Éclaircie"
+            width={40}
+            height={40}
+            className="w-auto h-auto"
           />
         </Link>
         {/* Section Contact et Icône */}

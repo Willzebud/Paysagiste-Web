@@ -13,7 +13,7 @@ const AnekTelugu = Anek_Telugu({
 
 // Métadonnées de la page
 export const metadata: Metadata = {
-  title: "Site Web Paysagiste",
+  title: "Site Web Paysagiste de l'entreprise Éclaircie",
   description: "Site web paysagiste de l'entreprise Éclaircie",
 };
 
@@ -25,6 +25,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr" className="h-full">
+      <head>
+        {/* Ajout de la balise preconnect */}
+        <link rel="preconnect" href="https://vercel.live" />
+        <link rel="preconnect" href="https://vercel.live" />
+        <link rel="dns-prefetch" href="https://vercel.live" />
+      </head>
       <body
         className={cn(
           GeistSans.variable, // Applique la police GeistSans
