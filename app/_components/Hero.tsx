@@ -25,11 +25,14 @@ export const Hero = () => {
         style={{ y: newHoverTop }}
       >
         <div className="flex flex-col">
-          <div className="w-36 h-36 m-auto">
+          <div className="m-auto">
             <Image
               src={logo}
               alt="Logo de l'entreprise de paysagisme Éclaircie"
+              width={144} // Taille réelle du logo (36 x 4 = 144px pour le w-36)
+              height={144}
               loading="lazy"
+              className="w-auto h-auto"
             />
           </div>
           <h1 className="max-w-3xl px-4 m-auto font-bold pb-2 pt-8">
@@ -56,7 +59,8 @@ export const Hero = () => {
         src={imageAccueil}
         alt="image d'accueil de l'entreprise Éclairice où l'on voit l'un des massifs rouge de Cassis depuis un jardin"
         className="w-full h-full object-cover object-center"
-        loading="lazy"
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
+        priority
       />
     </div>
   );
