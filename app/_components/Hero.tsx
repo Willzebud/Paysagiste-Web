@@ -61,6 +61,7 @@ export const Hero = () => {
         fill // Utilisation de layout fill pour couvrir toute la zone parent
         className="object-cover object-center w-full h-full" // Classe pour garantir la couverture
         priority
+        quality={90}
         sizes="100vw"
       />
     </div>
