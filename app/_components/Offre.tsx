@@ -17,9 +17,9 @@ export const Offre = () => {
           <div className="w-28 h-28 mb-6 mt-10">
             <IconeOffre className="w-full h-full" />
           </div>
-          <p className="text-black font-bold text-center text-2xl mt-1">
+          <h3 className="text-black font-bold text-center text-2xl mt-1">
             Bénéficiez de 50% de crédit d’impôt immédiat
-          </p>
+          </h3>
           <p className="text-black text-justify mt-3 mb-5 mx-5 md:px-[20px] lg:px-[20px]">
             L’avance immédiate du crédit d’impôt permet aux particuliers de
             bénéficier instantanément de 50 % de réduction sur leurs dépenses
