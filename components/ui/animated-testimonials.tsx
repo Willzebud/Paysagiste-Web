@@ -19,7 +19,6 @@ export const AnimatedTestimonials = ({
   const [active, setActive] = useState(0);
   const rotations = [-3, -7, 4, -5, 6];
 
-  // UseCallback for stable function reference
   const handleNext = useCallback(() => {
     setActive((prev) => (prev + 1) % testimonials.length);
   }, [testimonials.length]);
@@ -82,12 +81,11 @@ export const AnimatedTestimonials = ({
                     src={testimonial.src}
                     alt={`Testimonial ${index + 1}`}
                     fill
-                    sizes="(max-width: 768px) 100vw, 
-       (max-width: 1200px) 50vw, 
-       33vw"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     draggable={false}
                     className="relative h-full w-full rounded-3xl object-cover object-center"
-                    priority={isActive(index)}
+                    priority={index === 0} // Seule l'image visible immédiatement est prioritaire
+                    loading={index === 0 ? "eager" : "lazy"} // Lazy pour les images hors écran
                   />
                 </motion.div>
               ))}
@@ -95,7 +93,6 @@ export const AnimatedTestimonials = ({
           </div>
         </div>
       </div>
-      {/* Boutons unifiés pour mobile et desktop */}
       <div className="flex justify-center gap-4 mt-4">
         <button
           onClick={handlePrev}

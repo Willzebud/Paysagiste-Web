@@ -26,7 +26,11 @@ export const Hero = () => {
       >
         <div className="flex flex-col">
           <div className="w-36 h-36 m-auto">
-            <Image src={logo} alt="Logo de l'entreprise Éclaircie" />
+            <Image
+              src={logo}
+              alt="Logo de l'entreprise Éclaircie"
+              loading="lazy"
+            />
           </div>
           <h1 className="max-w-3xl px-4 m-auto font-bold pb-2 pt-8">
             Éclaircie Paysagiste
@@ -50,9 +54,9 @@ export const Hero = () => {
       </motion.div>
       <Image
         src={imageAccueil}
-        alt="image d'accueil"
+        alt="image d'accueil de l'entreprise Éclairice où l'on voit l'un des massifs rouge de Cassis depuis un jardin"
         className="w-full h-full object-cover object-center"
-        priority={true}
+        loading="lazy"
       />
     </div>
   );

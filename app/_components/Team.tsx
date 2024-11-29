@@ -31,7 +31,9 @@ export const Team = () => {
               src={EclaircieTeam}
               alt="Photo de l'équipe d'Eclaircie"
               className="w-full h-full object-cover object-center rounded-lg"
-              priority={true}
+              loading="lazy" // Lazy loading
+              width={400} // Largeur explicite
+              height={400}
             />
           </div>
         </div>
