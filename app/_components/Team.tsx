@@ -12,7 +12,7 @@ export const Team = () => {
         <div className="flex flex-col md:flex-row md:space-x-10 space-y-4 md:space-y-0">
           {/* Texte */}
           <div className="bg-quaternary p-8 rounded-lg shadow-xl w-full md:w-[400px]">
-            <p className="text-black text-center text-1xl mt-1 text-justify">
+            <p className="text-black text-center text-1xl mt-1 text-justify hyphens-auto">
               Chez Éclaircie notre équipe de paysagistes met tout son dynamisme
               et sa créativité au service de vos projets. <br />
               <br /> Animés par une véritable passion pour la nature et le

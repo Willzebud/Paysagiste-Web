@@ -20,7 +20,7 @@ export const Offre = () => {
           <h3 className="text-black font-bold text-center text-2xl mt-1">
             Bénéficiez de 50% de crédit d’impôt immédiat
           </h3>
-          <p className="text-black text-justify mt-3 mb-5 mx-5 md:px-[20px] lg:px-[20px]">
+          <p className="text-black text-justify mt-3 mb-5 mx-5 md:px-[20px] lg:px-[20px] hyphens-auto">
             L’avance immédiate du crédit d’impôt permet aux particuliers de
             bénéficier instantanément de 50 % de réduction sur leurs dépenses
             éligibles pour des services à domicile (ménage, jardinage...). Plus

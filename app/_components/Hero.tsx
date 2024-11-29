@@ -28,8 +28,8 @@ export const Hero = () => {
           <div className="m-auto">
             <Image
               src={logo}
-              alt="Logo de l'entreprise de paysagisme Éclaircie"
-              width={144} // Taille réelle du logo (36 x 4 = 144px pour le w-36)
+              alt="Logo  hero de l'entreprise de paysagisme Éclaircie"
+              width={144}
               height={144}
               priority
               className="w-auto h-auto"
@@ -49,9 +49,9 @@ export const Hero = () => {
             immédiate
           </p>
           <Link href="#Offre">
-            <p className="font-bold text-black mt-5 underline">
+            <h2 className="font-bold text-black mt-5 underline">
               En savoir plus
-            </p>
+            </h2>
           </Link>
         </div>
       </motion.div>

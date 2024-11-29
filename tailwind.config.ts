@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import tailwindcssAnimate from "tailwindcss-animate";
 
 const config: Config = {
   darkMode: ["class"],
@@ -78,7 +79,20 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+    tailwindcssAnimate,
+    function ({
+      addUtilities,
+    }: {
+      addUtilities: (utilities: Record<string, { hyphens: string }>) => void;
+    }) {
+      addUtilities({
+        ".hyphens-auto": { hyphens: "auto" },
+        ".hyphens-none": { hyphens: "none" },
+        ".hyphens-manual": { hyphens: "manual" },
+      });
+    },
+  ],
 };
 
 export default config;
