@@ -58,8 +58,8 @@ export const Hero = () => {
       <Image
         src={imageAccueil}
         alt="image d'accueil de l'entreprise Éclaircie où l'on voit l'un des massifs rouge de Cassis depuis un jardin"
-        fill // Utilisation de layout fill pour couvrir toute la zone parent
-        className="object-cover object-center w-auto h-auto" // Classe pour garantir la couverture
+        fill
+        className="object-cover object-center w-auto h-auto"
         priority
         quality={90}
         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"

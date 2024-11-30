@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.eclairciepaysages.fr/
+
+# Sitemaps
+Sitemap: https://www.eclairciepaysages.fr/sitemap.xml
