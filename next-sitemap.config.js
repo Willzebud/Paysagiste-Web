@@ -6,4 +6,5 @@ module.exports = {
   changefreq: "weekly", // Fréquence de mise à jour suggérée pour les pages
   priority: 0.7, // Priorité par défaut pour les pages
   exclude: ["/404"],
+  generateIndexSitemap: true,
 };
