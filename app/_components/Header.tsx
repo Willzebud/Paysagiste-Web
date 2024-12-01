@@ -5,7 +5,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { IconeWatering1 } from "@/public/images/iconeHeader/iconeWatering1";
 import { IconeWatering2 } from "@/public/images/iconeHeader/iconeWatering2";
-import logo from "../../public/images/logo.webp";
+import logo from "../../public/logo.webp";
 import Image from "next/image";
 
 export const Header = () => {

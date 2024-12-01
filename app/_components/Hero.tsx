@@ -3,7 +3,7 @@ import imageAccueil from "../../public/images/imageAccueil.webp";
 import Image from "next/image";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import Link from "next/link";
-import logo from "../../public/images/logo.webp";
+import logo from "../../public/logo.webp";
 
 export const Hero = () => {
   const { scrollYProgress } = useScroll();

@@ -30,6 +30,18 @@ export default function RootLayout({
         <link rel="preconnect" href="https://vercel.live" />
         <link rel="preconnect" href="https://vercel.live" />
         <link rel="dns-prefetch" href="https://vercel.live" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Éclaircie Paysagiste",
+              url: "https://www.eclairciepaysages.fr",
+              logo: "https://www.eclairciepaysages.fr/logo.webp", // Remplacez par l'URL de votre logo
+            }),
+          }}
+        />
       </head>
       <body
         className={cn(
