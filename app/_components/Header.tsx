@@ -5,7 +5,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { IconeWatering1 } from "@/public/images/iconeHeader/iconeWatering1";
 import { IconeWatering2 } from "@/public/images/iconeHeader/iconeWatering2";
-import logo from "../../public/logo.webp";
+//import logo from "../../public/logo.webp";
 import Image from "next/image";
 
 export const Header = () => {
@@ -19,7 +19,7 @@ export const Header = () => {
       <Section className="flex items-center justify-between">
         <Link href="#Accueil">
           <Image
-            src={logo}
+            src="https://www.eclairciepaysages.fr/logo.webp"
             alt="Logo de l'entreprise de paysagisme Éclaircie"
             width={40}
             height={40}
