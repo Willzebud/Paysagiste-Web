@@ -26,6 +26,7 @@ export default function RootLayout({
   return (
     <html lang="fr" className="h-full">
       <head>
+        <link rel="canonical" href="https://www.eclairciepaysages.fr/" />
         {/* Ajout de la balise preconnect */}
         <link rel="preconnect" href="https://vercel.live" />
         <link rel="preconnect" href="https://vercel.live" />
