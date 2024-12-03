@@ -27,6 +27,12 @@ export default function RootLayout({
     <html lang="fr" className="h-full">
       <head>
         <link rel="canonical" href="https://www.eclairciepaysages.fr/" />
+        <link rel="icon" href="https://www.eclairciepaysages.fr/logo.webp" />
+        <link
+          rel="image_src"
+          href="https://www.eclairciepaysages.fr/logo.webp"
+        />
+
         {/* Ajout de la balise preconnect */}
         <link rel="preconnect" href="https://vercel.live" />
         <link rel="preconnect" href="https://vercel.live" />
