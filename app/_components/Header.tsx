@@ -20,7 +20,7 @@ export const Header = () => {
         <Link href="#Accueil">
           <Image
             src="https://www.eclairciepaysages.fr/logo.webp"
-            alt="Logo de l'entreprise de paysagisme Éclaircie"
+            alt="Logo entreprise paysagisme Éclaircie"
             width={40}
             height={40}
             className="w-auto h-auto"
