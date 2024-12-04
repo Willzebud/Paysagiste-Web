@@ -7,3 +7,6 @@ Host: https://www.eclairciepaysages.fr/
 
 # Sitemaps
 Sitemap: https://www.eclairciepaysages.fr/sitemap.xml
+
+# Logo
+Sitemap: https://www.eclairciepaysages.fr/logo.webp
