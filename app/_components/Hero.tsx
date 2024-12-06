@@ -3,7 +3,7 @@ import imageAccueil from "../../public/images/imageAccueil.webp";
 import Image from "next/image";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import Link from "next/link";
-import logo from "../../public/logo.webp";
+//import logo from "../../public/logo.webp";
 
 export const Hero = () => {
   const { scrollYProgress } = useScroll();
@@ -27,7 +27,7 @@ export const Hero = () => {
         <div className="flex flex-col">
           <div className="m-auto">
             <Image
-              src={logo}
+              src="https://www.eclairciepaysages.fr/logo.webp"
               alt="Logo hero de l'entreprise de paysagisme Éclaircie"
               width={144}
               height={144}
