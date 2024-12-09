@@ -27,10 +27,11 @@ export default function RootLayout({
     <html lang="fr" className="h-full">
       <head>
         <link rel="canonical" href="https://www.eclairciepaysages.fr/" />
-        <link rel="icon" href="https://www.eclairciepaysages.fr/logo.webp" />
+        <link rel="icon" href="/logo.png" />
+        <link rel="apple-touch-icon" href="/logo.png" />
         <link
           rel="image_src"
-          href="https://www.eclairciepaysages.fr/logo.webp"
+          href="https://www.eclairciepaysages.fr/logo.png"
         />
 
         {/* Ajout de la balise preconnect */}
