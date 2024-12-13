@@ -47,7 +47,7 @@ export const Offre = () => {
             className="shadow-lg bg-tertiary w-[150px] md:w-[150px] lg:w-[150px] h-[40px] rounded-lg mb-5"
           >
             <p className="font-bold text-black">
-              {showMore ? "Voir moins" : "En Savoir plus"}
+              {showMore ? "Voir moins" : "En savoir plus"}
             </p>
           </button>
           <Link
