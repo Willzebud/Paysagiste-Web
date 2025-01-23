@@ -13,7 +13,7 @@ const AnekTelugu = Anek_Telugu({
 
 // Métadonnées de la page
 export const metadata: Metadata = {
-  title: "Site Web Paysagiste de l'entreprise Éclaircie",
+  title: "Entreprise Éclaircie Paysagiste",
   description: "Site web paysagiste de l'entreprise Éclaircie",
 };
 
