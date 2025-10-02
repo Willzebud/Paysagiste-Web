@@ -3,7 +3,7 @@
 import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "motion/react";
 import { cubicBezier, type Variants } from "motion";
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 
 export type ImagesSliderProps = {
   images?: string[];
@@ -28,12 +28,14 @@ export const ImagesSlider = ({
   const [loading, setLoading] = useState(false);
   const [loadedImages, setLoadedImages] = useState<string[]>([]);
 
-  const handleNext = () => {
+  // Handlers stabilisés
+  const handleNext = useCallback(() => {
     setCurrentIndex((prev) => (prev + 1 === images.length ? 0 : prev + 1));
-  };
-  const handlePrevious = () => {
+  }, [images.length]);
+
+  const handlePrevious = useCallback(() => {
     setCurrentIndex((prev) => (prev - 1 < 0 ? images.length - 1 : prev - 1));
-  };
+  }, [images.length]);
 
   // Pré-chargement des images
   useEffect(() => {
@@ -65,7 +67,7 @@ export const ImagesSlider = ({
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "ArrowRight") handleNext();
-      if (e.key === "ArrowLeft") handlePrevious();
+      else if (e.key === "ArrowLeft") handlePrevious();
     };
     window.addEventListener("keydown", onKey);
 
@@ -73,11 +75,12 @@ export const ImagesSlider = ({
     if (autoplay && images.length > 1) {
       interval = window.setInterval(handleNext, 5000);
     }
+
     return () => {
       window.removeEventListener("keydown", onKey);
       if (interval) window.clearInterval(interval);
     };
-  }, [autoplay, images.length]);
+  }, [autoplay, images.length, handleNext, handlePrevious]);
 
   const slideVariants: Variants = {
     initial: { scale: 0, opacity: 0, rotateX: 45 },

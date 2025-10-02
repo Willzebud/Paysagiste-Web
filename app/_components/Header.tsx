@@ -30,43 +30,43 @@ export const Header = () => {
         </Link>
         {/* Section Contact et Icône */}
         <div className="flex items-center gap-6">
-  {/* Tel */}
-  <a
-    href="tel:0634902284"
-    aria-label="Appeler"
-    className="flex items-center justify-center w-14 h-14"
-  >
-    <Phone className="text-primary-foreground" strokeWidth={1.5} />
-  </a>
+          {/* Tel */}
+          <a
+            href="tel:0634902284"
+            aria-label="Appeler"
+            className="flex items-center justify-center w-14 h-14"
+          >
+            <Phone className="text-primary-foreground" strokeWidth={1.5} />
+          </a>
 
-  {/* Instagram */}
-  <a
-    href="https://www.instagram.com/__eclaircie_/"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Instagram"
-    className="flex items-center justify-center w-14 h-14"
-  >
-    <InstaOutline
-      size={50}
-      strokeWidth={0.7}
-      className="text-primary-foreground"
-    />
-  </a>
+          {/* Instagram */}
+          <a
+            href="https://www.instagram.com/__eclaircie_/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+            className="flex items-center justify-center w-14 h-14"
+          >
+            <InstaOutline
+              size={50}
+              strokeWidth={0.7}
+              className="text-primary-foreground"
+            />
+          </a>
 
-  {/* Menu (arrosoir) */}
-  <button
-    onClick={toggleMenu}
-    aria-label="Toggle menu"
-    className="flex items-center justify-center w-14 h-14 focus:outline-none"
-  >
-    {isOpen ? (
-      <IconeWatering2 className="text-primary-foreground" size={44} />
-    ) : (
-      <IconeWatering1 className="text-primary-foreground" size={36} />
-    )}
-  </button>
-</div>
+          {/* Menu (arrosoir) */}
+          <button
+            onClick={toggleMenu}
+            aria-label="Toggle menu"
+            className="flex items-center justify-center w-14 h-14 focus:outline-none"
+          >
+            {isOpen ? (
+              <IconeWatering2 className="text-primary-foreground" size={44} />
+            ) : (
+              <IconeWatering1 className="text-primary-foreground" size={36} />
+            )}
+          </button>
+        </div>
 
         {/* Menu mobile */}
         <motion.div
@@ -87,7 +87,7 @@ export const Header = () => {
               className="w-full text-center p-2 text-quinary font-bold"
               onClick={() => setIsOpen(false)}
             >
-              Crédit d'impôt -50%
+              Crédit d&apos;impôt -50%
             </Link>
             <Link
               href="#Services"
