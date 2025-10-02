@@ -50,14 +50,13 @@ export const Offre = () => {
               {showMore ? "Voir moins" : "En savoir plus"}
             </p>
           </button>
-          <a
-            href="tel:0633278363"
+          <div
             aria-label="Appeler"
             className=" shadow-lg bg-quaternary w-[150px] md:w-[150px] lg:w-[150px] h-[40px] rounded-lg mb-10 flex flex-col items-center justify-center"
           >
-            <p className="font-bold text-black">Contactez-nous</p>
-          </a>
-          <Link href="#Contact"></Link>
+            <Link href="#Contact" className="font-bold text-black">Contactez-nous</Link>
+          </div>
+          
         </div>
       </div>
     </div>
