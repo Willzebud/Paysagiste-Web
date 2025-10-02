@@ -1,10 +1,11 @@
 "use client";
 import ContactForm from "@/components/ui/contactForm";
+import { Phone } from "lucide-react";
 
 export const Contact = () => {
   return (
     <div id="Contact" className="bg-quaternary pb-20 overflow-x-hidden">
-      <h2 className="font-caption font-bold pt-10 text-5xl max-w-3xl px-4 m-auto text-black mt-20 pt-20">
+      <h2 className="font-caption font-bold text-5xl max-w-3xl px-4 m-auto text-black mt-20 pt-20">
         Contact
       </h2>
       <div className="flex flex-col items-center justify-center md:flex-row md:space-x-28 space-y-4 md:space-y-0 max-w-5xl m-auto w-full">
@@ -15,11 +16,15 @@ export const Contact = () => {
             contacter en m&apos;envoyant un message ou nous appeler directement.
             Je serai ravi de vous répondre !
           </p>
+          {/* Tel */}
           <a
-            href="tel:+33634902284"
-            className="block mt-4 md:ml-4 text-lg font-semibold text-black underline"
+            href="tel:0634902284"
+            aria-label="Appeler"
+            className="mt-4 w-14 h-14 mx-auto grid place-items-center"
           >
-            +33634902284
+            <div className="bg-white w-12 h-12 rounded-full flex items-center justify-center">
+              <Phone className="text-primary-foreground" strokeWidth={1.5} />
+            </div>
           </a>
         </div>
         <div className="w-full md:w-[400px] p-4">

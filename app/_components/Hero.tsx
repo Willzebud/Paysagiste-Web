@@ -1,69 +1,35 @@
 "use client";
-import imageAccueil from "../../public/images/imageAccueil.webp";
-import Image from "next/image";
-import { motion, useScroll, useTransform, useSpring } from "framer-motion";
+import { motion } from "motion/react";
+import { ImagesSlider } from "@/components/ui/images-slider";
 import Link from "next/link";
-//import logo from "../../public/logo.webp";
 
-export const Hero = () => {
-  const { scrollYProgress } = useScroll();
-
-  const baseHoverTop = useTransform(scrollYProgress, [0, 0.001], [-1000, 0]);
-  const newHoverTop = useSpring(baseHoverTop, { stiffness: 100, damping: 20 });
+export function Hero() {
+  const images = [
+    "/images/imageAccueil.webp",
+    "/images/imagesRealisations/Eclaircie2.webp",
+    "/images/imagesRealisations/Eclaircie9.webp",
+  ];
 
   return (
-    <div
-      id="Accueil"
-      className="w-full h-screen flex relative overflow-hidden" // `overflow-hidden` pour éviter tout débordement
-    >
+    <ImagesSlider className="h-[40rem]" images={images} overlay overlayClassName="bg-black/60">
       <motion.div
-        className="absolute w-full h-screen bg-quaternary opacity-80 z-20"
-        style={{ y: newHoverTop }}
-      />
-      <motion.div
-        className="absolute w-full h-full flex items-center justify-center text-black text-center text-xl z-30"
-        style={{ y: newHoverTop }}
+        initial={{ opacity: 0, y: -80 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="z-50 flex flex-col justify-center items-center"
       >
-        <div className="flex flex-col">
-          <div className="m-auto">
-            <Image
-              src="https://www.eclairciepaysages.fr/logo.webp"
-              alt="Logo hero de l'entreprise de paysagisme Éclaircie"
-              width={144}
-              height={144}
-              priority
-              className="w-auto h-auto"
-            />
-          </div>
-          <h1 className="max-w-3xl px-4 m-auto font-bold pb-2 pt-8">
-            Éclaircie Paysagiste
-          </h1>
-          <p className="max-w-3xl px-4 m-auto pb-10">
-            Nous sommes une société spécialisée dans la création et l’entretien
-            d’espaces verts. PAYSAGISTE dans les Bouches-du-Rhône, le Vaucluse
-            et le Var, faites confiance à notre expertise pour sublimer vos
-            extérieurs !
-          </p>
-          <p className="max-w-3xl px-4 m-auto font-bold">
-            Bénéficiez de 50 % de réduction sur vos factures grâce à l’avance
-            immédiate
-          </p>
-          <Link href="#Offre">
-            <h2 className="font-bold text-black mt-5 underline">
-              En savoir plus
-            </h2>
-          </Link>
-        </div>
+        <motion.p className="font-bold text-xl md:text-6xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
+          Éclaircie Paysages
+        </motion.p>
+        <button className="px-4 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center rounded-full relative mt-4">
+          <Link
+              href="#Contact"
+            >
+              Contactez-nous
+            </Link>
+          <div className="absolute inset-x-0 h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-emerald-500 to-transparent" />
+        </button>
       </motion.div>
-      <Image
-        src={imageAccueil}
-        alt="image d'accueil de l'entreprise Éclaircie où l'on voit l'un des massifs rouge de Cassis depuis un jardin"
-        fill
-        className="object-cover object-center w-auto h-auto"
-        priority
-        quality={90}
-        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
-      />
-    </div>
+    </ImagesSlider>
   );
-};
+}

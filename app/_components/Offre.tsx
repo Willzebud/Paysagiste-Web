@@ -9,7 +9,7 @@ export const Offre = () => {
 
   return (
     <div id="Offre" className="bg-quaternary pb-20 overflow-x-hidden">
-      <h2 className="font-caption font-bold pt-20 text-5xl max-w-3xl px-4 m-auto text-black pt-20 mb-10">
+      <h2 className="font-caption font-bold text-5xl max-w-3xl px-4 m-auto text-black pt-20 mb-10">
         Offre immédiate
       </h2>
       <div className="flex flex-col items-center justify-center">
@@ -50,12 +50,14 @@ export const Offre = () => {
               {showMore ? "Voir moins" : "En savoir plus"}
             </p>
           </button>
-          <Link
-            href="#Contact"
+          <a
+            href="tel:0633278363"
+            aria-label="Appeler"
             className=" shadow-lg bg-quaternary w-[150px] md:w-[150px] lg:w-[150px] h-[40px] rounded-lg mb-10 flex flex-col items-center justify-center"
           >
-            <p className="font-bold text-black">Contactez-Nous</p>
-          </Link>
+            <p className="font-bold text-black">Contactez-nous</p>
+          </a>
+          <Link href="#Contact"></Link>
         </div>
       </div>
     </div>
