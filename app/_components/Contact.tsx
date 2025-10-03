@@ -4,7 +4,12 @@ import { Phone } from "lucide-react";
 
 export const Contact = () => {
   return (
-    <div id="Contact" className="bg-quaternary pb-20 overflow-x-hidden">
+    <div id="Contact" className="backdrop-blur-sm bg-[#2FA87A]/10 ring-1 ring-inset ring-[#2FA87A]/25 pb-20 overflow-x-hidden">
+      {/* filets lumineux émeraude */}
+  <div aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-px
+       w-3/4 mx-auto bg-gradient-to-r from-transparent via-[#2FA87A] to-transparent" />
+  <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 h-px
+       w-3/4 mx-auto bg-gradient-to-r from-transparent via-[#2FA87A] to-transparent" />
       <h2 className="font-caption font-bold text-5xl max-w-3xl px-4 m-auto text-black mt-20 pt-20">
         Contact
       </h2>

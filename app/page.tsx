@@ -1,7 +1,6 @@
 import { Header } from "../app/_components/Header";
 import { Hero } from "./_components/Hero";
 import { Spacing } from "./_components/Spacing";
-import { SpacingGreen } from "./_components/SpacingGreen";
 import { Realisations } from "./_components/Realisations";
 import { Inspiration } from "./_components/Inspiration";
 import { Services } from "./_components/Services";
@@ -19,11 +18,9 @@ export default function Home() {
       <Realisations />
       <Spacing />
       <Offre />
-      <SpacingGreen />
       <Services />
       <Spacing />
       <Inspiration />
-      <SpacingGreen />
       <Team />
       <Contact />
       <Footer />

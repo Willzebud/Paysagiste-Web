@@ -5,10 +5,10 @@ export const IconeOffre = (
 ) => {
   return (
     <svg height={props.size} width={props.size} viewBox="0 0 60 60" {...props}>
-      <g id="Page-1" fill="none" fillRule="evenodd">
+      <g id="Page-1" fill="#3c786e" fillRule="evenodd">
         <g
           id="059---Money-Bag"
-          fill="black"
+          fill="#3c786e"
           fillRule="nonzero"
           transform="translate(0 -1)"
         >

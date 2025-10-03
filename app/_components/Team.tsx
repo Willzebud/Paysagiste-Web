@@ -11,7 +11,12 @@ export const Team = () => {
       <Section>
         <div className="flex flex-col md:flex-row md:space-x-10 space-y-4 md:space-y-0">
           {/* Texte */}
-          <div className="bg-quaternary p-8 rounded-lg shadow-xl w-full md:w-[400px]">
+          <div className="backdrop-blur-sm bg-[#2FA87A]/10 ring-1 ring-inset ring-[#2FA87A]/25 p-8 rounded-lg shadow-xl w-full md:w-[400px]">
+            {/* filets lumineux émeraude */}
+  <div aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-px
+       w-3/4 mx-auto bg-gradient-to-r from-transparent via-[#2FA87A] to-transparent" />
+  <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 h-px
+       w-3/4 mx-auto bg-gradient-to-r from-transparent via-[#2FA87A] to-transparent" />
             <p className="text-black text-1xl mt-1 text-justify hyphens-auto">
               Chez Éclaircie notre équipe de paysagistes met tout son dynamisme
               et sa créativité au service de vos projets. <br />
@@ -26,7 +31,12 @@ export const Team = () => {
           </div>
 
           {/* Image */}
-          <div className="bg-black p-1 rounded-lg w-full md:w-[400px]">
+          <div className="backdrop-blur-sm bg-[#2FA87A]/10 ring-1 ring-inset ring-[#2FA87A]/25 p-1 rounded-lg w-full md:w-[400px]">
+          {/* filets lumineux émeraude */}
+  <div aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-px
+       w-3/4 mx-auto bg-gradient-to-r from-transparent via-[#2FA87A] to-transparent" />
+  <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 h-px
+       w-3/4 mx-auto bg-gradient-to-r from-transparent via-[#2FA87A] to-transparent" />
             <Image
               src={EclaircieTeam}
               alt="Photo de l'équipe de l'entreprise Eclaircie avec deux hommes"

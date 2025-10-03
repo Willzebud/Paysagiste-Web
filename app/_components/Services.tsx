@@ -40,8 +40,13 @@ export const Services = () => {
         {services.map((service, index) => (
           <div
             key={index}
-            className="flex flex-col items-center justify-items-center bg-quaternary p-6 rounded-lg shadow-lg"
+            className="flex flex-col items-center justify-items-center backdrop-blur-sm bg-[#2FA87A]/10 ring-1 ring-inset ring-[#2FA87A]/25 p-6 rounded-lg shadow-lg"
           >
+            {/* filets lumineux émeraude */}
+  <div aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-px
+       w-3/4 mx-auto bg-gradient-to-r from-transparent via-[#2FA87A] to-transparent" />
+  <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 h-px
+       w-3/4 mx-auto bg-gradient-to-r from-transparent via-[#2FA87A] to-transparent" />
             <div className="w-24 h-24 mb-6">
               <service.icon className="w-full h-full text-primary" />
             </div>

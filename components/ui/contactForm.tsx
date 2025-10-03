@@ -54,7 +54,7 @@ export default function ContactForm() {
             name="name"
             id="name"
             required
-            className="mt-1 p-2 block w-full border rounded-md bg-background text-foreground border-2 border-black"
+            className="mt-1 p-2 block w-full rounded-md bg-background text-foreground"
           />
         </div>
 
@@ -71,7 +71,7 @@ export default function ContactForm() {
             name="email"
             id="email"
             required
-            className="mt-1 p-2 block w-full border rounded-md bg-background text-foreground border-2 border-black"
+            className="mt-1 p-2 block w-full rounded-md bg-background text-foreground"
           />
         </div>
 
@@ -87,14 +87,14 @@ export default function ContactForm() {
             name="message"
             id="message"
             required
-            className="mt-1 p-2 block w-full border rounded-md bg-background text-foreground h-32 border-2 border-black"
+            className="mt-1 p-2 block w-full  rounded-md bg-background text-foreground h-32"
           ></textarea>
         </div>
 
         {/* Bouton de soumission */}
         <button
           type="submit"
-          className={`w-full bg-black text-white font-semibold py-2 px-4 rounded-md ${
+          className={`w-full text-black bg-white font-semibold py-2 px-4 rounded-md ${
             isButtonDisabled ? "opacity-50 cursor-not-allowed" : ""
           }`}
           disabled={isButtonDisabled} // Désactive le bouton lors de l'envoi
