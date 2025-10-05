@@ -123,7 +123,7 @@ export const ImagesSlider = ({
             animate="visible"
             exit={direction === "up" ? "upExit" : "downExit"}
             variants={slideVariants}
-            className="h-full w-full absolute inset-0 object-cover object-center"
+            className="h-full w-full absolute inset-0 object-cover object-bottom"
             style={{ backfaceVisibility: "hidden", transformStyle: "preserve-3d" }}
           />
         </AnimatePresence>
