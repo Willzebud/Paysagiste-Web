@@ -1,13 +1,14 @@
 "use client";
-import { motion } from "motion/react";
+import { motion } from "motion/react"; // si ça te met une erreur TS, remplace par: import { motion } from "framer-motion";
 import { ImagesSlider } from "@/components/ui/images-slider";
 import Link from "next/link";
 
 export function Hero() {
   const images = [
-    "/images/imageAccueil.webp",
-    "/images/imagesRealisations/Eclaircie2.webp",
-    "/images/imagesRealisations/Eclaircie9.webp",
+    "https://res.cloudinary.com/diik10xnk/image/upload/f_auto,q_auto:good,w_1800,c_fill,g_auto,dpr_auto/v1759676445/imageAccueil_copie_ehyikz.webp",
+    "https://res.cloudinary.com/diik10xnk/image/upload/f_auto,q_auto:good,w_1800,c_fill,g_auto,dpr_auto/v1759676157/hero2_c0csz3.webp",
+    "https://res.cloudinary.com/diik10xnk/image/upload/f_auto,q_auto:good,w_1800,c_fill,g_auto,dpr_auto/v1759676162/hero3_rnacyb.webp",
+    "https://res.cloudinary.com/diik10xnk/image/upload/f_auto,q_auto:good,w_1800,c_fill,g_auto,dpr_auto/v1759676166/hero4_wcesxd.webp",
   ];
 
   return (
