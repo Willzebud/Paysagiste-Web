@@ -25,7 +25,10 @@ export default function RootLayout({
         <link rel="canonical" href="https://www.eclairciepaysages.fr/" />
         <link rel="icon" href="/logo.png" />
         <link rel="apple-touch-icon" href="/logo.png" />
-        <link rel="image_src" href="https://www.eclairciepaysages.fr/logo.png" />
+        <link
+          rel="image_src"
+          href="https://www.eclairciepaysages.fr/logo.png"
+        />
 
         <link rel="preconnect" href="https://vercel.live" />
         <link rel="dns-prefetch" href="https://vercel.live" />
@@ -61,11 +64,10 @@ export default function RootLayout({
         {/* ========= Axeptio : config + SDK (doit charger avant GTM) ========= */}
         <Script id="axeptio-settings" strategy="beforeInteractive">
           {`
-            window.axeptioSettings = {
-              clientId: "68dafa10a63a2c7e7b0ca2c4",
-              cookiesVersion: "eclairciepaysages-fr-EU"
-            };
-          `}
+    window.axeptioSettings = {
+      clientId: "68dafa10a63a2c7e7b0ca2c4"
+    };
+  `}
         </Script>
         <Script
           id="axeptio-sdk"
