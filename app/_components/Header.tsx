@@ -3,12 +3,10 @@ import { Section } from "./Section";
 import { useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { IconeWatering1 } from "@/public/images/iconeHeader/iconeWatering1";
-import { IconeWatering2 } from "@/public/images/iconeHeader/iconeWatering2";
+import { MoreHorizontal, X } from "lucide-react";
 import { InstaOutline } from "./icons/Insta";
 //import logo from "../../public/logo.webp";
 import Image from "next/image";
-import { Phone } from "lucide-react";
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,15 +26,21 @@ export const Header = () => {
             className="w-auto h-auto"
           />
         </Link>
+
         {/* Section Contact et Icône */}
-        <div className="flex items-center gap-6">
+        <div className="flex items-center gap-4 md:gap-12">
+          {/* Devis */}
+          <Link href="#Contact" onClick={() => setIsOpen(false)} className="hover:text-quinary">
+            Devis
+          </Link>
+
           {/* Tel */}
           <a
             href="tel:0634902284"
             aria-label="Appeler"
-            className="flex items-center justify-center w-14 h-14"
+            className="flex items-center justify-center h-14 hover:text-quinary"
           >
-            <Phone className="text-primary-foreground" strokeWidth={1.5} />
+            Appelez-nous
           </a>
 
           {/* Instagram */}
@@ -45,25 +49,35 @@ export const Header = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
-            className="flex items-center justify-center w-14 h-14"
+            className="flex items-center justify-center w-14 h-14 "
           >
             <InstaOutline
               size={50}
               strokeWidth={0.7}
-              className="text-primary-foreground"
+              className="text-primary-foreground hover:text-quinary"
             />
           </a>
 
-          {/* Menu (arrosoir) */}
+          {/* Menu (trois points) */}
           <button
             onClick={toggleMenu}
             aria-label="Toggle menu"
-            className="flex items-center justify-center w-14 h-14 focus:outline-none"
+            aria-expanded={isOpen}
+            aria-controls="mobile-menu"
+            className="grid place-items-center w-7 h-7 rounded-full border border-black focus:outline-none hover:border-quinary"
           >
             {isOpen ? (
-              <IconeWatering2 className="text-primary-foreground" size={44} />
+              <X
+                className="text-primary-foreground"
+                size={18}
+                strokeWidth={1.5}
+              />
             ) : (
-              <IconeWatering1 className="text-primary-foreground" size={36} />
+              <MoreHorizontal
+                className="text-primary-foreground"
+                size={18}
+                strokeWidth={1.5}
+              />
             )}
           </button>
         </div>
