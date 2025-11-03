@@ -3,8 +3,8 @@ import { Section } from "./Section";
 import { useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { MoreHorizontal, X } from "lucide-react";
 import { InstaOutline } from "./icons/Insta";
+import { X } from "lucide-react";
 //import logo from "../../public/logo.webp";
 import Image from "next/image";
 
@@ -30,7 +30,11 @@ export const Header = () => {
         {/* Section Contact et Icône */}
         <div className="flex items-center gap-4 md:gap-12">
           {/* Devis */}
-          <Link href="#Contact" onClick={() => setIsOpen(false)} className="hover:text-quinary">
+          <Link
+            href="#Contact"
+            onClick={() => setIsOpen(false)}
+            className="hover:text-quinary"
+          >
             Devis
           </Link>
 
@@ -49,7 +53,7 @@ export const Header = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
-            className="flex items-center justify-center w-14 h-14 "
+            className="flex items-center justify-center"
           >
             <InstaOutline
               size={50}
@@ -58,26 +62,22 @@ export const Header = () => {
             />
           </a>
 
-          {/* Menu (trois points) */}
+          {/* Menu (texte / X) */}
           <button
             onClick={toggleMenu}
-            aria-label="Toggle menu"
+            aria-label={isOpen ? "Fermer le menu" : "Ouvrir le menu"}
             aria-expanded={isOpen}
             aria-controls="mobile-menu"
-            className="grid place-items-center w-7 h-7 rounded-full border border-black focus:outline-none hover:border-quinary"
+            className="inline-flex items-center justify-center h-10 min-w-[48px] focus:outline-none"
           >
             {isOpen ? (
               <X
-                className="text-primary-foreground"
-                size={18}
+                className="hover:text-quinary"
+                size={28}
                 strokeWidth={1.5}
               />
             ) : (
-              <MoreHorizontal
-                className="text-primary-foreground"
-                size={18}
-                strokeWidth={1.5}
-              />
+              <span className="hover:text-quinary leading-none">Menu</span>
             )}
           </button>
         </div>
