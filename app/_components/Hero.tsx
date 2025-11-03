@@ -1,5 +1,5 @@
 "use client";
-import { motion } from "motion/react"; // si ça te met une erreur TS, remplace par: import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { ImagesSlider } from "@/components/ui/images-slider";
 import Link from "next/link";
 
@@ -12,25 +12,26 @@ export function Hero() {
   ];
 
   return (
-    <ImagesSlider
-      className="h-[40rem]"
-      images={images}
-      overlay
-      overlayClassName="bg-black/60"
-    >
+    <ImagesSlider className="h-[40rem]" images={images} overlay overlayClassName="bg-black/60">
       <motion.div
         initial={{ opacity: 0, y: -80 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="z-50 flex flex-col justify-center items-center"
+        className="z-50 flex flex-col items-center text-center"
       >
-        <motion.p className="font-bold text-xl md:text-6xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-200 py-4">
+        {/* Title — larger on mobile */}
+        <motion.h1 className="font-bold text-3xl sm:text-4xl md:text-6xl lg:text-7xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-200 leading-tight">
           Éclaircie Paysages
-        </motion.p>
-        <p className="font-story text-4xl text-white">Artisans Paysagistes Français 🇫🇷</p>
+        </motion.h1>
+
+        {/* Tagline — smaller on mobile, scales up later */}
+        <p className="mt-2 font-story text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white leading-tight">
+          Artisans Paysagistes Français <span className="align-middle">🇫🇷</span>
+        </p>
+
         <Link
           href="#Offre"
-          className="px-4 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center rounded-full relative mt-4 inline-flex items-center justify-center"
+          className="mt-5 px-4 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white rounded-full relative inline-flex items-center justify-center"
         >
           Bénéficiez du crédit d&apos;impôt
           <div className="pointer-events-none absolute inset-x-0 h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-emerald-500 to-transparent" />
