@@ -10,6 +10,9 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  .font-story {
+    font-family: var(--font-story-script), sans-serif;
+  }
 }
 
 @layer base {

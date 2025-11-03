@@ -5,6 +5,7 @@ import type { Metadata } from "next";
 import { Anek_Telugu } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
+import { storyScript } from "./fonts/story-script";
 
 const AnekTelugu = Anek_Telugu({
   subsets: ["latin"],
@@ -20,7 +21,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="fr" className="h-full">
+    <html lang="fr" className={cn("h-full", storyScript.variable)}>
       <head>
         <link rel="canonical" href="https://www.eclairciepaysages.fr/" />
         <link rel="icon" href="/logo.png" />
