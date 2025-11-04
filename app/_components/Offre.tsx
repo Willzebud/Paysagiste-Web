@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
-import { IconeOffre } from "@/public/images/iconeOffre/iconeOffre";
 import Link from "next/link";
+import { LogoEtat } from "./icons/LogoEtat";
 
 export const Offre = () => {
   // État pour gérer l'affichage du paragraphe masqué
@@ -9,25 +9,34 @@ export const Offre = () => {
 
   return (
     <div id="Offre" className="relative overflow-hidden pb-20">
-  {/* couche sombre */}
-  <div aria-hidden className="absolute inset-0 -z-10" />
+      {/* couche sombre */}
+      <div aria-hidden className="absolute inset-0 -z-10" />
 
-  {/* voile vert + blur + liseré */}
-  <div aria-hidden className="absolute inset-0 -z-10
-       backdrop-blur-sm bg-[#2FA87A]/10 ring-1 ring-inset ring-[#2FA87A]/25" />
+      {/* voile vert + blur + liseré */}
+      <div
+        aria-hidden
+        className="absolute inset-0 -z-10
+       backdrop-blur-sm bg-[#2FA87A]/10 ring-1 ring-inset ring-[#2FA87A]/25"
+      />
 
-  {/* filets lumineux émeraude */}
-  <div aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-px
-       w-3/4 mx-auto bg-gradient-to-r from-transparent via-[#2FA87A] to-transparent" />
-  <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 h-px
-       w-3/4 mx-auto bg-gradient-to-r from-transparent via-[#2FA87A] to-transparent" />
+      {/* filets lumineux émeraude */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-x-0 top-0 h-px
+       w-3/4 mx-auto bg-gradient-to-r from-transparent via-[#2FA87A] to-transparent"
+      />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-x-0 bottom-0 h-px
+       w-3/4 mx-auto bg-gradient-to-r from-transparent via-[#2FA87A] to-transparent"
+      />
       <h2 className="font-caption font-bold text-5xl max-w-3xl px-4 m-auto text-black pt-20 mb-10">
         Offre immédiate
       </h2>
       <div className="flex flex-col items-center justify-center">
         <div className="bg-white w-auto md:w-[800px] lg:w-[1000px] mx-2 md:mx-10 lg:mx-10 h-auto lg:h-auto shadow-xl flex flex-col items-center justify-center">
-          <div className="w-28 h-28 mb-6 mt-10">
-            <IconeOffre className="w-full h-full" />
+          <div className="relative w-40 h-28 md:w-48 md:h-32 lg:w-60 lg:h-40 mb-6 mt-10">
+            <LogoEtat className="w-full h-full" />
           </div>
           <h3 className="text-black font-bold text-center text-2xl mt-1">
             Bénéficiez de 50% de crédit d’impôt immédiat
@@ -59,10 +68,16 @@ export const Offre = () => {
             className="shadow-lg backdrop-blur-sm bg-tertiary ring-1 ring-inset ring-[#2FA87A]/25 w-[150px] md:w-[150px] lg:w-[150px] h-[40px] rounded-lg mb-5"
           >
             {/* filets lumineux émeraude */}
-  <div aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-px
-       w-3/4 mx-auto bg-gradient-to-r from-transparent via-[#2FA87A] to-transparent" />
-  <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 h-px
-       w-3/4 mx-auto bg-gradient-to-r from-transparent via-[#2FA87A] to-transparent" />
+            <div
+              aria-hidden
+              className="pointer-events-none absolute inset-x-0 top-0 h-px
+       w-3/4 mx-auto bg-gradient-to-r from-transparent via-[#2FA87A] to-transparent"
+            />
+            <div
+              aria-hidden
+              className="pointer-events-none absolute inset-x-0 bottom-0 h-px
+       w-3/4 mx-auto bg-gradient-to-r from-transparent via-[#2FA87A] to-transparent"
+            />
             <p className="font-bold text-black">
               {showMore ? "Voir moins" : "En savoir plus"}
             </p>
@@ -72,13 +87,20 @@ export const Offre = () => {
             className=" shadow-lg backdrop-blur-sm bg-[#2FA87A]/10 ring-1 ring-inset ring-[#2FA87A]/25 w-[150px] md:w-[150px] lg:w-[150px] h-[40px] rounded-lg mb-10 flex flex-col items-center justify-center"
           >
             {/* filets lumineux émeraude */}
-  <div aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-px
-       w-3/4 mx-auto bg-gradient-to-r from-transparent via-[#2FA87A] to-transparent" />
-  <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 h-px
-       w-3/4 mx-auto bg-gradient-to-r from-transparent via-[#2FA87A] to-transparent" />
-            <Link href="#Contact" className="font-bold text-black">Contactez-nous</Link>
+            <div
+              aria-hidden
+              className="pointer-events-none absolute inset-x-0 top-0 h-px
+       w-3/4 mx-auto bg-gradient-to-r from-transparent via-[#2FA87A] to-transparent"
+            />
+            <div
+              aria-hidden
+              className="pointer-events-none absolute inset-x-0 bottom-0 h-px
+       w-3/4 mx-auto bg-gradient-to-r from-transparent via-[#2FA87A] to-transparent"
+            />
+            <Link href="#Contact" className="font-bold text-black">
+              Contactez-nous
+            </Link>
           </div>
-          
         </div>
       </div>
     </div>
