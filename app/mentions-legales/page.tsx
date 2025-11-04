@@ -59,13 +59,13 @@ export default function MentionsLegalesPage() {
           <li>
             Téléphone :{" "}
             <a href="tel:+33625268589" className="underline underline-offset-4">
-              +33&nbsp;6&nbsp;25&nbsp;26&nbsp;85&nbsp;89
+              +33&nbsp;6&nbsp;34&nbsp;90&nbsp;22&nbsp;84
             </a>
           </li>
           <li>
             Email :{" "}
             <a href="mailto:Willyamrib@gmail.com" className="underline underline-offset-4">
-              Willyamrib@gmail.com
+              paysages@eclaircie-pro.com
             </a>
           </li>
           <li>Adresse : 2 chemin de la Ribassière, 13013 Marseille, France</li>

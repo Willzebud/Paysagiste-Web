@@ -2,13 +2,14 @@
 
 import Image from "next/image";
 import React from "react";
-import { FlipWordsDemo } from "../_components/FlipWords";
 import imagesRealisations from "../Data/fichiersJSON/imagesRealisations.json";
 
 export const Realisations = () => {
   return (
     <div id="Realisations" className="overflow-x-hidden">
-      <FlipWordsDemo />
+      <h2 className="font-caption font-bold text-5xl max-w-3xl px-4 m-auto text-black pt-20 mb-10">
+        Réalisations
+      </h2>
       <div className="overflow-x-auto flex space-x-4 py-4 max-w-6xl m-auto">
         <div className="flex flex-row gap-4">
           {imagesRealisations.map((image, index) => (
