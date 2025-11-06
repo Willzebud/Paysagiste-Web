@@ -64,7 +64,7 @@ export default function MentionsLegalesPage() {
           </li>
           <li>
             Email :{" "}
-            <a href="mailto:Willyamrib@gmail.com" className="underline underline-offset-4">
+            <a href="mailto:paysages@eclaircie-pro.com" className="underline underline-offset-4">
               paysages@eclaircie-pro.com
             </a>
           </li>
