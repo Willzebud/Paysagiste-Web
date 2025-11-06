@@ -82,7 +82,7 @@ export const Realisations = () => {
               loaded ? "opacity-100" : "opacity-0"
             }`}
             loading={idx === 0 ? "eager" : "lazy"}
-            onLoad={() => setLoaded(true)}  // ← remplace onLoadingComplete
+            onLoad={() => setLoaded(true)} // ← remplace onLoadingComplete
             priority={idx === 0}
           />
 
@@ -132,10 +132,22 @@ export const Realisations = () => {
                 setLoaded(false);
               }}
               className={`h-2.5 rounded-full transition-all ${
-                i === idx ? "w-6 bg-black/80" : "w-2.5 bg-black/30 hover:bg-black/50"
+                i === idx
+                  ? "w-6 bg-black/80"
+                  : "w-2.5 bg-black/30 hover:bg-black/50"
               }`}
             />
           ))}
+        </div>
+
+        {/* ===== Avis Google (Elfsight) ===== */}
+        <div className="max-w-5xl mx-auto px-4 mt-14">
+
+          {/* Bloc Elfsight : garde exactement ton ID */}
+          <div
+            className="elfsight-app-cce2e897-41c7-4020-af14-762bc68a4247"
+            data-elfsight-app-lazy
+          />
         </div>
       </div>
     </section>

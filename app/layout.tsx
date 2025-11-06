@@ -110,6 +110,13 @@ export default function RootLayout({
             });
           `}
         </Script>
+
+        {/* ========= Elfsight (global) ========= */}
+        <Script
+          id="elfsight-platform"
+          src="https://elfsightcdn.com/platform.js"
+          strategy="afterInteractive"
+        />
       </head>
 
       <body
