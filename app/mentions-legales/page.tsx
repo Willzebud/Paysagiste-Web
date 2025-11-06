@@ -58,7 +58,7 @@ export default function MentionsLegalesPage() {
         <ul className="list-disc pl-6 space-y-1">
           <li>
             Téléphone :{" "}
-            <a href="tel:+33625268589" className="underline underline-offset-4">
+            <a href="tel:+336349084" className="underline underline-offset-4">
               +33&nbsp;6&nbsp;34&nbsp;90&nbsp;22&nbsp;84
             </a>
           </li>
